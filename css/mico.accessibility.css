@@ -1,0 +1,18 @@
+/* ---------- 12. Accessibility Helpers ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  padding-inline: clamp(20px, calc(20px +(80px - 20px)*((100vw - 320px) /(1200px - 320px))), 80px);
+}
+
+.focusable:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

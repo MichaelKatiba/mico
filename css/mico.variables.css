@@ -1,0 +1,183 @@
+/* Variables */
+:root {
+/*#######################################################*/
+  --font-family-primary: 'Vastago Grotesk','Roboto', sans-serif;
+  --font-family-secondary: 'Montserrat', sans-serif;
+  
+  /* Font Size */
+  --font-size-h1: clamp(3.5rem, 7vw, 5rem);
+  --font-size-h2: clamp(2.8rem, 6vw, 4rem);
+  --font-size-h3: clamp(2.1rem, 5vw, 3rem);
+  --font-size-h4: clamp(1.6rem, 4vw, 2rem);
+  --font-size-h5: clamp(1.2rem, 3vw, 1.5rem);
+  --font-size-h6: clamp(1rem, 2.5vw, 1.2rem);
+  --font-size-body: clamp(1rem, 2.5vw, 1.4rem);
+  --font-size-accent: clamp(0.95rem, 1.75vw, 1.25rem);
+  --font-size-button: clamp(1rem, 1.75vw, 1.2rem);
+  --font-size-link: clamp(0.990rem, 1.75vw, 1rem);
+  --font-size-super: 0.80rem;
+  --font-size-sub: 0.80rem;
+
+  /* Font Weight */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-s-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-x-bold: 800;
+
+  /* Line Height */
+  --line-height-heading: 1;
+  --line-height-body: 1.2;
+  --line-height-accent: 1.2;
+  --line-height-button: 1;
+  --line-height-link: 1.2;
+  --line-height-super: 1;
+  --line-height-sub: 1;
+
+  /* Letter Spacing */
+  --letter-spacing-heading: 0.04rem;
+  --letter-spacing-body: 0.020rem;
+  --letter-spacing-accent: 0.05rem;
+  --letter-spacing-button: 0.05rem;
+  --letter-spacing-link: 0.025rem;
+  --letter-spacing-super: 0.025rem;
+  --letter-spacing-sub: 0.025rem;
+
+  /* Writing Mode */
+  --writing-mode: horizontal-tb;
+    
+  /* Text Transform */
+  --text-transform-heading: none;
+  --text-transform-body: none;
+  --text-transform-accent: none;
+  --text-transform-button: uppercase;
+  --text-transform-link: none;
+  --text-transform-super: none;
+  --text-transform-sub: none;
+
+/*######################################################*/
+  /* Default Light Theme Colors from https://huemint.com/website-3/#palette=fbfaf6-ece8f7-994ff1-1e242b-6c62fc-f8e802 */
+  /* Primary Colors */
+  --primary-color: #6c62fc;
+  --secondary-color: #994ff1;
+  --tetiary-color: #f8e802;
+  --primary-text-color: #0a0b1f;
+  --secondary-text-color: #ecf2fa;
+  --primary-background-color: #fbfaf6;
+  --secondary-background-color:  #ece8f7;
+
+  /* Shadow Colors */
+  --shadow-1: 0 4px 8px #07031a33;
+  --shadow-2: 0 4px 8px #0a042733;
+  --shadow-3: 0 4px 8px #13074e33;
+
+
+  /* Link Colors */
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+  --link-visited-color: #7048e8;
+
+  /* Button Colors */
+  --button-color: var(--primary-color);
+  --button-hover-color: #0056b3;
+  --button-active-color: #0056b3;
+  --button-disabled-color: #6c757d;
+
+  /* Success Colors */
+  --success: #28a745;
+  --success-dark: #1e7e34;
+  --success-light: #7ddc8a;
+  
+  /* Danger Colors */
+  --danger: #dc3545;
+  --danger-dark: #b21f2d;
+  --danger-light: #f292a0;
+  
+  /* Warning Colors */
+  --warning: #ffc107;
+  --warning-dark: #d39e00;
+  --warning-light: #ffe183;
+  
+  /* Info Colors */
+  --info: #17a2b8;
+  --info-dark: #0f6674;
+  --info-light: #68cae3;
+
+/*#################################################*/
+
+/* Spacing */
+  --spacing-0: 0;
+  --spacing-unit: 4px;
+  --spacing-4: calc(var(--spacing-unit) * 1);  /* 4px */
+  --spacing-8: calc(var(--spacing-unit) * 2);  /* 8px */
+  --spacing-12: calc(var(--spacing-unit) * 3);  /* 12px */
+  --spacing-16: calc(var(--spacing-unit) * 4);  /* 16px */
+  --spacing-20: calc(var(--spacing-unit) * 5);  /* 20px */
+  --spacing-24: calc(var(--spacing-unit) * 6);  /* 24px */
+  --spacing-28: calc(var(--spacing-unit) * 7);  /* 28px */
+  --spacing-32: calc(var(--spacing-unit) * 8);  /* 32px */
+  --spacing-36: calc(var(--spacing-unit) * 9);/* 36px */
+  --spacing-40: calc(var(--spacing-unit) * 10);/* 40px */
+  --spacing-44: calc(var(--spacing-unit) * 11);/* 44px */
+  --spacing-48: calc(var(--spacing-unit) * 12);/* 48px */
+  --spacing-52: calc(var(--spacing-unit) * 13);  /* 52px */
+  --spacing-56: calc(var(--spacing-unit) * 14);  /* 56px */
+  --spacing-60: calc(var(--spacing-unit) * 15);  /* 60px */
+  --spacing-64: calc(var(--spacing-unit) * 16);  /* 64px */
+  --spacing-68: calc(var(--spacing-unit) * 17);  /* 68px */
+  --spacing-72: calc(var(--spacing-unit) * 18);  /* 72px */
+  --spacing-76: calc(var(--spacing-unit) * 19);  /* 76px */
+  --spacing-80: calc(var(--spacing-unit) * 20);  /* 80px */
+  --spacing-84: calc(var(--spacing-unit) * 21);  /* 84px */
+  --spacing-88: calc(var(--spacing-unit) * 22);  /* 88px */
+  --spacing-92: calc(var(--spacing-unit) * 23);  /* 92px */
+  --spacing-96: calc(var(--spacing-unit) * 24);  /* 96px */
+  --spacing-100: calc(var(--spacing-unit) * 25); /* 100px */
+
+
+  /* Breakpoints */
+  --breakpoint-sm: 490px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* Container max widths */
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+
+  /* Border radius */
+  --border-radius-4: var(--spacing-1);
+  --border-radius-8: var(--spacing-2);
+  --border-radius-12: var(--spacing-3);
+  --border-radius-16: var(--spacing-4);
+  --border-radius-round: 9999px;
+
+  /* Z-index */
+  --z-index-4: var(--spacing-1);
+
+  /* Border Styles */
+  --border-style-none: none;
+  --border-style-solid: solid;
+
+  /* Border Widths */
+  --border-width-0: 0px;
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-4: 4px;
+  --border-width-8: 8px;
+
+/* Transition Properties */
+  --transition-all: all .4s ease;
+  --transition-color: color .4s ease;
+  --transition-background: background .4s ease;
+  --transition-border: border .4s ease;
+  --transition-opacity: opacity .4s ease;
+  --transition-transform: transform .4s ease;
+  --transition-box-shadow: box-shadow .4s ease;
+
+
+}

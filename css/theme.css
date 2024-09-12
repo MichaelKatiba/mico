@@ -1,0 +1,15 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --primary: rgb(108,100,252);
+    --white: white;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --yellow: #fcec04;
+}
+body {
+    color: var(--dark);
+}body, html {
+    min-height: 100vh;
+}

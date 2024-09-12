@@ -1,0 +1,54 @@
+/* 
+  Comprehensive Vanilla CSS Framework
+  Version: 1.0.0
+  Author: Michael Katiba
+  Description: A production-ready CSS framework using flexbox, grid, and utility classes
+*/
+
+@import "mico.variables.css";
+@import "mico.comp.css";
+@import "mico.utility.css";
+@import "mico.motion.css";
+
+
+/* ---------- 2. Base Styles ---------- */
+html {
+  box-sizing: border-box;
+}
+
+
+/* Default Presets - Disabled by Default */
+*,*::before,*::after{
+  margin-inline: 0 !important;
+  margin-block: 0 !important;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+
+body{
+  max-width: 1440px;
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+  text-wrap: pretty !important;
+  margin-inline: auto !important;
+}
+
+header{ padding-block: var(--spacing-4); }
+
+
+div{
+  padding-block: var(--spacing-0)!important; 
+  padding-inline: var(--spacing-0)!important; 
+  margin: 0 !important; 
+  gap: var(--spacing-16);}
+
+img, picture, svg, video{
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+
+}
+
+
+

@@ -1,0 +1,214 @@
+/* Font Size Utilities */
+.text-xs { font-size: var(--text-xs); }
+.text-sm { font-size: var(--text-sm); }
+.text-md { font-size: var(--text-base); }
+.text-lg { font-size: var(--text-lg); }
+.text-xl { font-size: var(--text-xl); }
+.text-ultra { font-size: var(--text-ultra); }
+
+
+/* Font Weight Utilities */
+.font-thin { font-weight: var(--font-thin); }
+.font-extralight { font-weight: var(--font-extralight); }
+.font-light { font-weight: var(--font-light); }
+.font-normal { font-weight: var(--font-normal); }
+.font-medium { font-weight: var(--font-medium); }
+.font-semibold { font-weight: var(--font-semibold); }
+.font-bold { font-weight: var(--font-bold); }
+.font-extrabold { font-weight: var(--font-extrabold); }
+.font-black { font-weight: var(--font-black); }
+
+/* Line Height Utilities */
+.line-height-xs { line-height: var(--line-height-xs); }
+.line-height-sm { line-height: var(--line-height-sm); }
+.line-height-md { line-height: var(--line-height-md); }
+.line-height-lg { line-height: var(--line-height-lg); }
+.line-height-xl { line-height: var(--line-height-xl); }
+.line-height-ultra { line-height: var(--line-height-ultra); }
+
+/* Letter Spacing Utilities */
+.letter-spacing-xs { letter-spacing: var(--tracking-tighter); }
+.letter-spacing-sm { letter-spacing: var(--tracking-tight); }
+.letter-spacing-md { letter-spacing: var(--tracking-normal); }
+.letter-spacing-lg { letter-spacing: var(--tracking-wide); }
+.letter-spacing-xl { letter-spacing: var(--tracking-wider); }
+.letter-spacing-ultra { letter-spacing: var(--tracking-widest); }
+
+/* Text Alignment Utilities */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* Text Transform Utilities */
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.normal-case { text-transform: none; }
+
+/* Text Decoration Utilities */
+.underline { 
+  text-decoration: underline;
+  text-underline-offset: var(--underline-offset);
+  text-decoration-thickness: var(--underline-thickness);
+}
+.overline { text-decoration: overline; }
+.line-through { text-decoration: line-through; }
+.no-underline { text-decoration: none; }
+
+/* Font Style Utilities */
+.italic { font-style: italic; }
+.not-italic { font-style: normal; }
+
+/* Text Overflow Utilities */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.overflow-ellipsis { text-overflow: ellipsis; }
+.text-clip { text-overflow: clip; }
+
+/* Word Break Utilities */
+.break-normal { overflow-wrap: normal; word-break: normal; }
+.break-words { overflow-wrap: break-word; }
+.break-all { word-break: break-all; }
+
+/* Whitespace Utilities */
+.whitespace-normal { white-space: normal; }
+.whitespace-nowrap { white-space: nowrap; }
+.whitespace-pre { white-space: pre; }
+.whitespace-pre-line { white-space: pre-line; }
+.whitespace-pre-wrap { white-space: pre-wrap; }
+
+/* Text Direction Utilities */
+.text-ltr { direction: ltr; }
+.text-rtl { direction: rtl; }
+
+/* Vertical Alignment Utilities */
+.align-baseline { vertical-align: baseline; }
+.align-top { vertical-align: top; }
+.align-middle { vertical-align: middle; }
+.align-bottom { vertical-align: bottom; }
+.align-text-top { vertical-align: text-top; }
+.align-text-bottom { vertical-align: text-bottom; }
+
+/* Font Variant Numeric Utilities */
+.normal-nums { font-variant-numeric: normal; }
+.ordinal { font-variant-numeric: ordinal; }
+.slashed-zero { font-variant-numeric: slashed-zero; }
+.lining-nums { font-variant-numeric: lining-nums; }
+.oldstyle-nums { font-variant-numeric: oldstyle-nums; }
+.proportional-nums { font-variant-numeric: proportional-nums; }
+.tabular-nums { font-variant-numeric: tabular-nums; }
+.diagonal-fractions { font-variant-numeric: diagonal-fractions; }
+.stacked-fractions { font-variant-numeric: stacked-fractions; }
+
+/* Text Columns Utilities */
+.columns-1 { columns: 1; }
+.columns-2 { columns: 2; }
+.columns-3 { columns: 3; }
+.columns-4 { columns: 4; }
+
+/* Text Shadow Utilities */
+.text-shadow-xs { text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+.text-shadow-sm { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
+.text-shadow-md { text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); }
+.text-shadow-none { text-shadow: none; }
+
+/* Font Smoothing Utilities */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+/* Text Stroke Utilities */
+.text-stroke-1 { -webkit-text-stroke-width: 1px; }
+.text-stroke-2 { -webkit-text-stroke-width: 2px; }
+.text-stroke-4 { -webkit-text-stroke-width: 4px; }
+
+/* Writing Mode Utilities */
+.writing-vertical-rl { writing-mode: vertical-rl; }
+.writing-vertical-lr { writing-mode: vertical-lr; }
+.writing-horizontal-tb { writing-mode: horizontal-tb; }
+
+/* Text Indent Utilities */
+.indent-sm { text-indent: 1em; }
+.indent-md { text-indent: 2em; }
+.indent-lg { text-indent: 3em; }
+
+/* Hyphenation Utilities */
+.hyphens-auto { hyphens: auto; }
+.hyphens-manual { hyphens: manual; }
+.hyphens-none { hyphens: none; }
+
+/* Responsive Typography */
+@media (min-width: 640px) {
+  .sm\:text-left { text-align: left; }
+  .sm\:text-center { text-align: center; }
+  .sm\:text-right { text-align: right; }
+  /* Add more responsive classes as needed */
+}
+
+@media (min-width: 768px) {
+  .md\:text-left { text-align: left; }
+  .md\:text-center { text-align: center; }
+  .md\:text-right { text-align: right; }
+  /* Add more responsive classes as needed */
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-left { text-align: left; }
+  .lg\:text-center { text-align: center; }
+  .lg\:text-right { text-align: right; }
+  /* Add more responsive classes as needed */
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-left { text-align: left; }
+  .xl\:text-center { text-align: center; }
+  .xl\:text-right { text-align: right; }
+  /* Add more responsive classes as needed */
+}
+
+/* Advanced Typography Features */
+[data-drop-cap]::first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 0.8;
+  padding-right: 0.1em;
+  padding-top: 0.1em;
+}
+
+[data-balance-text] {
+  text-wrap: balance;
+}
+
+[data-pretty-quote]::before {
+  content: open-quote;
+}
+
+[data-pretty-quote]::after {
+  content: close-quote;
+}
+
+[data-gradient-text] {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+

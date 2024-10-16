@@ -1,15 +1,125 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+@import "presets/default.pre.css";
+@import "presets/oxygenbuilder.pre.css";
+@import "presets/article.pre.css";
+@import "mico.variables.css";
+@import "utils/button.utils.css";
+@import "motion/mico.motion.css";
+@import "utils/typography.utils.css";
+@import "utils/color.utils.css";
+@import "utils/layout.utils.css";
+@import "utils/spacing.utils.css";
+@import "utils/border.utils.css";
+@import "utils/spacing.utils.css";
+@import "components/skeleton.comp.css";
+
+
+
+
+/*
+ * Custom Style Guide / Design System
+ * 
+ * Purpose:
+ * This file serves as a central location for your project's custom styles and brand-specific design tokens.
+ * Use it to override the default styles of your chosen CSS framework and maintain consistency across your project.
+ *
+ * How to use:
+ * 1. Copy this file into your project's CSS directory.
+ * 2. Link this stylesheet in your HTML file after the framework's CSS file.
+ * 3. Customize the variables and styles below to match your brand and design requirements.
+ *
+ * How to override framework styles:
+ * - Use more specific selectors or the `!important` flag for styles that aren't being applied due to specificity issues.
+ */
+
+/* -----------------------------*
+
+/* Color Palette From: https://huemint.com/website-3/#palette=fbfaf6-ece8f7-994ff1-1e242b-6c62fc-f8e8 */
+:root{
+/* Light Mode Colors */
+--color-primary: #6c62fc;
+--color-secondary: #e56161;
+--color-base: #1e242b;
+--color-accent: #ffe070;
+
+--color-text: var(--color-black-300);
+--color-link: var(--color-black-600);
+--color-btn: var(--color-white-200);
+--color-btn-ghost: var(--color-black-400);
+--color-bg-primary: var(--color-white-200);
+
 }
-:root {
-    --primary: rgb(108,100,252);
-    --white: white;
-    --light: #f8f9fa;
-    --dark: #212529;
-    --yellow: #fcec04;
+/* Dark Mode Colors */
+[data-theme="dark"] {
+    --color-text: var(--color-white-100);
+    --color-link: var(--color-white-500);
+    --color-btn: var(--color-white-400);
+    --color-btn-ghost: var(--color-white-200);
+    --color-bg-primary: var(--color-primary-shade-darkest);
+    --color-bg-secondary: var(--color-grey-800);
 }
+
 body {
-    color: var(--dark);
-}body, html {
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg-primary) !important;
+    color: var(--color-text) !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.nav__link,.link{
+    color: var(--color-link) !important;
+
+}
+
+.btn{
+    color: var(--color-btn) !important;
+
+}
+
+.btn--ghost{
+    color: var(--color-btn-ghost) !important;
+  }
+
+/* Accessibility Helpers */
+.color-contrast-safe {
+    color: var(--color-text);
+    background-color: var(--color-bg-primary);
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --color-text: #000000;
+        --color-bg-primary: #ffffff;
+    }
+    
+    [data-theme="dark"] {
+        --color-text: #ffffff;
+        --color-bg-primary: #000000;
+    }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.theme-toggle__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-text);
+}
+
+/* Theme Toggle Functionality */
+.theme-toggle[aria-pressed="false"] .theme-toggle__icon--moon,
+.theme-toggle[aria-pressed="true"] .theme-toggle__icon--sun {
+    display: none;
+}
+
+/* Image Handling in Dark Mode */
+[data-theme="dark"] img:not([src*=".svg"]) {
+    filter: brightness(0.8) contrast(1.2);
 }

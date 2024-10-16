@@ -1,0 +1,22 @@
+/* Transitions */
+.transition-all { transition: var(--transition-all); }
+.transition-color { transition: var(--transition-color); }
+.transition-background { transition: var(--transition-background); }
+.transition-border { transition: var(--transition-border); }
+.transition-opacity { transition: var(--transition-opacity); }
+.transition-transform { transition: var(--transition-transform); }
+.transition-box-shadow { transition: var(--transition-box-shadow); }
+.transition-none {transition-property: none;}	
+
+
+  /* Performance Optimizations */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }

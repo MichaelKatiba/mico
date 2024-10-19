@@ -4,71 +4,71 @@
 /* btn base */
 .btn {
   position: relative !important;
-  display: var(--display-inline-block);
-  border: var(--border-none);
-  border-radius: var(--border-radius-4);
-  font-size: var(--text-base);
-  font-weight: var(--font-weight-bold);
-  text-align: var(--text-center);
-  text-decoration: var(--text-decoration-none);
-  cursor: var(--cursor-pointer);
-  transition: var(--transition-all);
-  overflow: var(--overflow-hidden);
-  margin-top: var(--spacing-8) !important;
+  display: var(--mico-display-inline-block);
+  border: var(--mico-border-none);
+  border-radius: var(--mico-border-radius-4);
+  font-size: var(--mico-text-base);
+  font-weight: var(--mico-font-weight-bold);
+  text-align: var(--mico-text-center);
+  text-decoration: var(--mico-text-decoration-none);
+  cursor: var(--mico-cursor-pointer);
+  transition: var(--mico-transition-all);
+  overflow: var(--mico-overflow-hidden);
+  margin-top: var(--mico-size-8) !important;
   white-space: nowrap; 
   /* color: currentColor; */
 }
 
 /* btn variations */
-.btn--primary {
-  background-color: var(--primary-color);
-  color: var(--color-grey-900);
+.btn--mico-primary {
+  background-color: var(--mico-primary-color);
+  color: var(--mico-color-grey-900);
 }
 
-.btn--secondary {
-  background-color: var(--secondary-color);
+.btn--mico-secondary {
+  background-color: var(--mico-secondary-color);
 }
 
-.btn--danger {
-  background-color: var(--danger-color);
+.btn--mico-danger {
+  background-color: var(--mico-danger-color);
 }
 
-.btn--light {
-  background-color: var(--light-color);
-  color: var(--dark-color);
+.btn--mico-light {
+  background-color: var(--mico-light-color);
+  color: var(--mico-dark-color);
 }
 
-.btn--dark {
-  background-color: var(--dark-color);
+.btn--mico-dark {
+  background-color: var(--mico-dark-color);
   color: white;
 }
 
-.btn--outline {
+.btn--mico-outline {
   background-color: transparent;
   border: 2px solid currentColor;
 }
 
-.btn--outline.btn--primary { color: var(--primary-color); }
-.btn--outline.btn--secondary { color: var(--secondary-color); }
-.btn--outline.btn--danger { color: var(--danger-color); }
-.btn--outline.btn--light { color: var(--light-color); }
-.btn--outline.btn--dark { color: var(--dark-color); }
+.btn--mico-outline.btn--mico-primary { color: var(--mico-primary-color); }
+.btn--mico-outline.btn--mico-secondary { color: var(--mico-secondary-color); }
+.btn--mico-outline.btn--mico-danger { color: var(--mico-danger-color); }
+.btn--mico-outline.btn--mico-light { color: var(--mico-light-color); }
+.btn--mico-outline.btn--mico-dark { color: var(--mico-dark-color); }
 
-.btn--ghost{
-  color: var(--color-black-500) !important;
+.btn--mico-ghost{
+  color: var(--mico-color-black-500) !important;
   background-color: transparent;
 }
 
 /* btn sizes */
-.btn--sm {
-  font-size: var(--text-base-sm);
-  padding: var(--spacing-16) var(--spacing-20);
+.btn--mico-sm {
+  font-size: var(--mico-text-base-sm);
+  padding: var(--mico-size-16) var(--mico-size-20);
 
 }
 
-.btn--lg {
-  font-size: var(--text-base);
-  padding: var(--spacing-20) var(--spacing-24);
+.btn--mico-lg {
+  font-size: var(--mico-text-base);
+  padding: var(--mico-size-20) var(--mico-size-24);
 
 }
 
@@ -85,14 +85,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.btn--outline:hover,
-.btn--outline:focus {
+.btn--mico-outline:hover,
+.btn--mico-outline:focus {
   background-color: currentColor;
   color: white;
 }
 
 .btn:disabled,
-.btn--disabled {
+.btn--mico-disabled {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
@@ -100,26 +100,26 @@
 }
 
 /* btn with icon */
-.btn--icon {
+.btn--mico-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5em;
 }
 
-.btn--icon-only {
+.btn--mico-icon-only {
   padding: 0.75em;
   border-radius: 50%;
 }
 
 /* Ripple effect */
-.btn--ripple {
+.btn--mico-ripple {
   position: relative;
   overflow: hidden !important;
 
 }
 
-.btn--ripple::after {
+.btn--mico-ripple::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -144,18 +144,18 @@
   }
 }
 
-.btn--ripple:focus:not(:active)::after {
+.btn--mico-ripple:focus:not(:active)::after {
   animation: ripple 1s ease-out;
 }
 
 /* Loading state */
-.btn--loading {
+.btn--mico-loading {
   color: transparent !important;
   pointer-events: none;
   position: relative;
 }
 
-.btn--loading::after {
+.btn--mico-loading::after {
   content: "";
   position: absolute;
   width: 1em;
@@ -181,15 +181,15 @@
 
 /* Link styles */
 .link {
-  color: var(--white-900);
+  color: var(--mico-white-900);
   text-decoration: none;
   position: relative;
-  transition: color var(--transition-speed) ease;
+  transition: color var(--mico-transition-speed) ease;
 }
 
 .link:hover,
 .link:focus {
-  color: color-mix(in srgb, var(--color-primary) 80%, black);
+  color: color-mix(in srgb, var(--mico-color-primary) 80%, black);
 }
 
 .link::after {
@@ -201,7 +201,7 @@
   left: 0;
   background-color: currentColor;
   transform: scaleX(0);
-  transition: transform var(--transition-speed) ease;
+  transition: transform var(--mico-transition-speed) ease;
 }
 
 .link:hover::after,
@@ -210,15 +210,15 @@
 }
 
 /* Link variations */
-.link--underline {
+.link--mico-underline {
   text-decoration: underline;
 }
 
-.link--bold {
+.link--mico-bold {
   font-weight: bold;
 }
 
-.link--external::after {
+.link--mico-external::after {
   content: '\2197';
   display: inline-block;
   margin-left: 0.25em;
@@ -239,7 +239,7 @@
     border: 2px solid currentColor;
   }
 
-  .btn--outline {
+  .btn--mico-outline {
     border-width: 3px;
   }
 }
@@ -253,11 +253,11 @@
     transition: none;
   }
 
-  .btn--ripple::after {
+  .btn--mico-ripple::after {
     animation: none;
   }
 
-  .btn--loading::after {
+  .btn--mico-loading::after {
     animation: none;
     border: 2px solid currentColor;
     border-right-color: transparent;
@@ -269,82 +269,82 @@
 
 /* Primary Button States */
 .btn-primary {
-  background-color: var(--color-primary);
+  background-color: var(--mico-color-primary);
   color: #ffffff;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-shade-dark);
+  background-color: var(--mico-color-primary-shade-dark);
 }
 
 .btn-primary:active {
-  background-color: var(--color-primary-shade-darker);
+  background-color: var(--mico-color-primary-shade-darker);
 }
 
 .btn-primary:focus {
-  outline: 2px solid var(--color-primary-shade-light);
+  outline: 2px solid var(--mico-color-primary-shade-light);
   outline-offset: 2px;
 }
 
 /* Secondary Button States */
 .btn-secondary {
-  background-color: var(--color-secondary);
+  background-color: var(--mico-color-secondary);
   color: #ffffff;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-secondary-shade-dark);
+  background-color: var(--mico-color-secondary-shade-dark);
 }
 
 .btn-secondary:active {
-  background-color: var(--color-secondary-shade-darker);
+  background-color: var(--mico-color-secondary-shade-darker);
 }
 
 .btn-secondary:focus {
-  outline: 2px solid var(--color-secondary-shade-light);
+  outline: 2px solid var(--mico-color-secondary-shade-light);
   outline-offset: 2px;
 }
 
 /* Base Button States */
 .btn-base {
-  background-color: var(--color-base);
+  background-color: var(--mico-color-base);
   color: #ffffff;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-base:hover {
-  background-color: var(--color-base-shade-dark);
+  background-color: var(--mico-color-base-shade-dark);
 }
 
 .btn-base:active {
-  background-color: var(--color-base-shade-darker);
+  background-color: var(--mico-color-base-shade-darker);
 }
 
 .btn-base:focus {
-  outline: 2px solid var(--color-base-shade-light);
+  outline: 2px solid var(--mico-color-base-shade-light);
   outline-offset: 2px;
 }
 
 /* Link States */
 a {
-  color: var(--color-primary);
+  color: var(--mico-color-primary);
   text-decoration: none;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 a:hover {
-  color: var(--color-primary-shade-dark);
+  color: var(--mico-color-primary-shade-dark);
   text-decoration: underline;
 }
 
 a:active {
-  color: var(--color-primary-shade-darker);
+  color: var(--mico-color-primary-shade-darker);
 }
 
 a:focus {
-  outline: 2px solid var(--color-primary-shade-light);
+  outline: 2px solid var(--mico-color-primary-shade-light);
   outline-offset: 2px;
 }
 
@@ -358,6 +358,29 @@ a:disabled {
 }
 
 /* High Contrast Mode Adjustments */
-/* @media (prefers-contrast: high) {
+@media (prefers-contrast: high) {
   .btn-primary,
-  .btn-secon */
+  .btn-secondary,
+  .btn-base {
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-base:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}

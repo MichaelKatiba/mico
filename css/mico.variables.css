@@ -351,23 +351,6 @@
   --mico-animation-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --mico-animation-bounce: bounce 1s infinite;
 
-  /* Keyframes */
-  @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  @keyframes ping {
-    75%, 100% { transform: scale(2); opacity: 0; }
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: .5; }
-  }
-  @keyframes bounce {
-    0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
-    50% { transform: translateY(0); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
-  }
-
   /* Tables */
   --mico-table-auto: auto;
   --mico-table-fixed: fixed;
@@ -395,7 +378,46 @@
   --mico-max-w-full: 100%;
   --mico-max-h-full: 100%;
 
-  /* Git commit message */
-  /* Add comprehensive CSS custom properties for layout and styling */
+
+  /* Vertical Alignment */
+  --mico-align-baseline: baseline;
+  --mico-align-top: top;
+  --mico-align-middle: middle;
+  --mico-align-bottom: bottom;
+  --mico-align-text-top: text-top;
+  --mico-align-text-bottom: text-bottom;
+
+  /* Vertical Text Alignment */
+  --mico-vertical-align-baseline: baseline;
+  --mico-vertical-align-top: top;
+  --mico-vertical-align-middle: middle;
+  --mico-vertical-align-bottom: bottom;
+  --mico-vertical-align-text-top: text-top;
+  --mico-vertical-align-text-bottom: text-bottom;
+  --mico-vertical-align-sub: sub;
+  --mico-vertical-align-super: super;
+
+  /* Flexbox Vertical Alignment */
+  --mico-items-start: flex-start;
+  --mico-items-end: flex-end;
+  --mico-items-center: center;
+  --mico-items-baseline: baseline;
+  --mico-items-stretch: stretch;
+
+  /* Grid Vertical Alignment */
+  --mico-content-start: start;
+  --mico-content-end: end;
+  --mico-content-center: center;
+  --mico-content-between: space-between;
+  --mico-content-around: space-around;
+  --mico-content-evenly: space-evenly;
+
+  /* Vertical Spacing */
+  --mico-size-y-0: 0;
+  --mico-size-y-1: 0.25rem;
+  --mico-size-y-2: 0.5rem;
+  --mico-size-y-4: 1rem;
+  --mico-size-y-8: 2rem;
+
 
 }

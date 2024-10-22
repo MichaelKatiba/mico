@@ -1,12 +1,10 @@
-/* Variables */
 :root {
-/*#######################################################*/
   /* Breakpoints */
   --mico-breakpoint-xs: 490px;
   --mico-breakpoint-sm: 576px;
   --mico-breakpoint-md: 768px;
   --mico-breakpoint-lg: 992px;
-  --mico-breakpoint-xl: 1200px;
+  --mico-breakpoint-xl: 1280px;
   --mico-breakpoint-ultra: 1440px;
 
   /* Font Size */
@@ -18,7 +16,6 @@
   --mico-text-xs: clamp(1rem, 2.5vw, 1.2rem);
   --mico-text-base: clamp(1rem, 2.5vw, 1.4rem);
   --mico-text-base-sm: clamp(0.95rem, 1.75vw, 1.25rem);
-
 
   /* Font Weights */
   --mico-font-thin: 100;
@@ -32,7 +29,7 @@
   --mico-font-black: 900;
 
   /* Line Heights */
-  --mico-line-height-xs: 1;
+  --mico-line-height-xs: .97;
   --mico-line-height-sm: 1.2;
   --mico-line-height-md: 1.4;
   --mico-line-height-lg: 1.6;
@@ -51,6 +48,7 @@
   --mico-underline-offset: 0.15em;
   --mico-underline-thickness: 0.05em;
 
+  /* Text Align */
   --mico-text-center: center;
   --mico-text-left: left;
   --mico-text-right: right;
@@ -61,8 +59,6 @@
   --mico-text-ellipsis: ellipsis;
   --mico-text-clip: clip;
   --mico-text-overflow: ellipsis;
-
-/*#################################################*/
 
 /* Spacing */
   --mico-size-0: 0;
@@ -104,53 +100,34 @@
   --mico-size-128: calc(var(--mico-size-unit) * 32); /* 128px */
   --mico-size-132: calc(var(--mico-size-unit) * 33); /* 132px */
   
-
-
-  /* Responsive Gaps
-     Useful for grid and flexbox layouts */
-  --mico-gap-fluid-xs: clamp(var(--mico-size-4), 1vw, var(--mico-size-8));
-  --mico-gap-fluid-sm: clamp(var(--mico-size-8), 2vw, var(--mico-size-12));
-  --mico-gap-fluid-md: clamp(var(--mico-size-12), 3vw, var(--mico-size-16));
-  --mico-gap-fluid-lg: clamp(var(--mico-size-16), 4vw, var(--mico-size-20));
-  --mico-gap-fluid-xl: clamp(var(--mico-size-20), 5vw, var(--mico-size-24));
-  --mico-gap-fluid-2xl: clamp(var(--mico-size-24), 6vw, var(--mico-size-28));
-  --mico-gap-fluid-3xl: clamp(var(--mico-size-28), 7vw, var(--mico-size-32));
-  --mico-gap-fluid-4xl: clamp(var(--mico-size-32), 8vw, var(--mico-size-36));
-  --mico-gap-fluid-5xl: clamp(var(--mico-size-36), 9vw, var(--mico-size-40));
-  --mico-gap-fluid-6xl: clamp(var(--mico-size-40), 10vw, var(--mico-size-44));
-  --mico-gap-fluid-7xl: clamp(var(--mico-size-44), 11vw, var(--mico-size-48));
-  --mico-gap-fluid-8xl: clamp(var(--mico-size-48), 12vw, var(--mico-size-52));
-  --mico-gap-fluid-9xl: clamp(var(--mico-size-52), 13vw, var(--mico-size-56));
-  --mico-gap-fluid-10xl: clamp(var(--mico-size-56), 14vw, var(--mico-size-60));
-  --mico-gap-fluid-11xl: clamp(var(--mico-size-60), 15vw, var(--mico-size-64));
-  --mico-gap-fluid-12xl: clamp(var(--mico-size-64), 16vw, var(--mico-size-68));
-  --mico-gap-fluid-13xl: clamp(var(--mico-size-68), 17vw, var(--mico-size-72));
-  --mico-gap-fluid-14xl: clamp(var(--mico-size-72), 18vw, var(--mico-size-76));
-  --mico-gap-fluid-15xl: clamp(var(--mico-size-76), 19vw, var(--mico-size-80));
-  
-
-  /* Adaptive Paddings
-     Scales padding based on viewport size */
-  --mico-padding-adaptive-x: clamp(var(--mico-size-8), 8vw, var(--mico-size-100));
-  --mico-padding-adaptive-y: clamp(var(--mico-size-8), 8vw, var(--mico-size-80));
+  /* Adaptive paddings scales padding based on viewport size */
+  --mico-padding-adaptive: clamp(var(--mico-size-16), 8vw, var(--mico-size-100));
+  --mico-padding-adaptive-x: clamp(var(--mico-size-16), 8vw, var(--mico-size-100));
+  --mico-padding-adaptive-y: clamp(var(--mico-size-16), 6vw, var(--mico-size-56));
 
 
   /* Border radius */
+  --mico-border-radius-1: 1px;
+  --mico-border-radius-2: 2px;
+  --mico-border-radius-3: 3px;
+  --mico-border-radius-4: 4px;
+  --mico-border-radius-5: 5px;
+  --mico-border-radius-6: 6px;
+  --mico-border-radius-7: 7px;
+  --mico-border-radius-8: 8px;
   --mico-border-radius-round: 9999px;
 
 
-
-  /* Border Styles */
-  --mico-border-style-none: none;
-  --mico-border-style-solid: solid;
-  --mico-border-style-dashed: dashed;
-  --mico-border-style-dotted: dotted;
-  --mico-border-style-double: double;
-  --mico-border-style-groove: groove;
-  --mico-border-style-ridge: ridge;
-  --mico-border-style-inset: inset;
-  --mico-border-style-outset: outset;
-
+  /* Border and Outline Styles */
+  --mico-border-none: none;
+  --mico-border-solid: solid;
+  --mico-border-dashed: dashed;
+  --mico-border-dotted: dotted;
+  --mico-border-double: double;
+  --mico-border-groove: groove;
+  --mico-border-ridge: ridge;
+  --mico-border-inset: inset;
+  --mico-border-outset: outset;
 
   /* Border Widths */
   --mico-border-width-0: 0px;
@@ -168,7 +145,6 @@
   --mico-transition-opacity: opacity .4s ease;
   --mico-transition-transform: transform .4s ease;
   --mico-transition-box-shadow: box-shadow .4s ease;
-
 
   /* Shadow Variables */
   /* Light Mode Shadows */
@@ -204,8 +180,6 @@
     --mico-shadow-outer-lg: var(--mico-shadow-outer-lg-dark);
   }
 
-
-
   /* Position */
   --mico-position-static: static;
   --mico-position-relative: relative;
@@ -222,6 +196,12 @@
   /* Aspect Ratio */
   --mico-aspect-ratio-square: 1 / 1;
   --mico-aspect-ratio-video: 16 / 9;
+  --mico-aspect-ratio-portrait: 3 / 4;
+  --mico-aspect-ratio-landscape: 4 / 3;
+  --mico-aspect-ratio-widescreen: 21 / 9;
+  --mico-aspect-ratio-ultrawide: 32 / 9;
+  --mico-aspect-ratio-golden: 1.618 / 1;
+
 
   /* Box Decoration */
   --mico-box-decoration-slice: slice;
@@ -299,6 +279,7 @@
   --mico-grid-rows-3: repeat(3, minmax(0, 1fr));
 
   /* Background */
+  --mico-bg-none: none;
   --mico-bg-repeat: repeat;
   --mico-bg-no-repeat: no-repeat;
   --mico-bg-repeat-x: repeat-x;
@@ -326,14 +307,6 @@
   --mico-opacity-50: 0.5;
   --mico-opacity-75: 0.75;
   --mico-opacity-100: 1;
-
-  /* Border and Outline */
-  --mico-border-solid: solid;
-  --mico-border-dashed: dashed;
-  --mico-border-dotted: dotted;
-  --mico-border-double: double;
-  --mico-border-none: none;
-  --mico-outline-none: none;
 
   /* Transform */
   --mico-scale-100: scale(1);
@@ -368,16 +341,18 @@
   --mico-cursor-move: move;
   --mico-cursor-not-allowed: not-allowed;
 
-  /* Sizing */
-  --mico-w-full: 100%;
-  --mico-w-screen: 100vw;
-  --mico-h-full: 100%;
-  --mico-h-screen: 100vh;
-  --mico-min-w-0: 0;
-  --mico-min-h-0: 0;
-  --mico-max-w-full: 100%;
-  --mico-max-h-full: 100%;
-
+  /* Width & Height */
+  --mico-fit-content: fit-content;
+  --mico-min-content: min-content;
+  --mico-max-content: max-content;
+  --mico-width-full: 100%;
+  --mico-width-screen: 100vw;
+  --mico-height-full: 100%;
+  --mico-height-screen: 100vh;
+  --mico-min-width-0: 0;
+  --mico-min-height-0: 0;
+  --mico-max-width-full: 100%;
+  --mico-max-height-full: 100%;
 
   /* Vertical Alignment */
   --mico-align-baseline: baseline;
@@ -419,5 +394,19 @@
   --mico-size-y-4: 1rem;
   --mico-size-y-8: 2rem;
 
+  /* Standard Easing Functions */
+  --mico-ease: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+  --mico-ease-in: cubic-bezier(0.42, 0, 1.0, 1.0);
+  --mico-ease-out: cubic-bezier(0, 0, 0.58, 1.0);
+  --mico-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1.0);
 
+  /* Extra Easing Functions */
+  --mico-ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --mico-ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --mico-ease-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Physics-inspired Easing Functions */
+  --mico-ease-spring: cubic-bezier(0.5, 0.1, 0.1, 1);
+  --mico-ease-gravity: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --mico-ease-snappy: cubic-bezier(0.1, 0.9, 0.2, 1);
 }

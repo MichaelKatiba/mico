@@ -1,11 +1,11 @@
 /* Transitions */
-.transition-all { transition: var(--transition-all); }
-.transition-color { transition: var(--transition-color); }
-.transition-background { transition: var(--transition-background); }
-.transition-border { transition: var(--transition-border); }
-.transition-opacity { transition: var(--transition-opacity); }
-.transition-transform { transition: var(--transition-transform); }
-.transition-box-shadow { transition: var(--transition-box-shadow); }
+.transition-all { transition: var(--mico-transition-all); }
+.transition-color { transition: var(--mico-transition-color); }
+.transition-background { transition: var(--mico-transition-background); }
+.transition-border { transition: var(--mico-transition-border); }
+.transition-opacity { transition: var(--mico-transition-opacity); }
+.transition-transform { transition: var(--mico-transition-transform); }
+.transition-box-shadow { transition: var(--mico-transition-box-shadow); }
 .transition-none {transition-property: none;}	
 
 

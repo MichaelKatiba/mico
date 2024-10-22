@@ -6,12 +6,12 @@ html {
 /* Custom scroll speeds using utility classes */
 .scroll-slow {
   scroll-behavior: smooth;
-  --scroll-duration: 1.5s;
+  --mico-scroll-duration: 1.5s;
 }
 
 .scroll-fast {
   scroll-behavior: smooth;
-  --scroll-duration: 0.5s;
+  --mico-scroll-duration: 0.5s;
 }
 
 /* Disable smooth scroll for users who prefer reduced motion */

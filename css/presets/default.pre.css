@@ -5,8 +5,8 @@
   Description: A production-ready CSS framework using flexbox, grid, and utility classes
 */
 
-/* ---------- 2. Base Styles ---------- */
-html {
+/* ************************************************************************************************* */
+html, * {
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@ html {
 }
 
 
-header{ padding-block: var(--spacing-4); }
+header{ padding-block: var(--mico-size-4); }
 
 
 img, picture, svg, video{
@@ -33,10 +33,10 @@ img, picture, svg, video{
   /* Apply base typography styles */
   body {
     max-width: 1440px;
-    background-color: var(--bg-primary-color);
+    background-color: var(--mico-bg-primary-color);
     user-select: text !important;
-    color: var(--color-grey-800);
-    /* overflow-x: var(--overflow-hidden); */
+    color: var(--mico-color-grey-800);
+    /* overflow-x: var(--mico-overflow-hidden); */
     font-feature-settings: "kern" 1;
     text-rendering: optimizeLegibility;
     text-wrap: pretty !important;
@@ -45,26 +45,37 @@ img, picture, svg, video{
 
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--primary-font) !important;
-    line-height: var(--line-height-xs) !important;
+    font-family: var(--mico-primary-font) !important;
+    line-height: var(--mico-line-height-xs) !important;
     user-select: text !important;
     cursor: text !important;
+    text-wrap: pretty !important;
   }
   
-  h1 { font-size: var(--text-ultra); }
-  h2 { font-size: var(--text-lg); }
-  h3 { font-size: var(--text-md); }
-  h4 { font-size: var(--text-sm); }
-  h5 { font-size: var(--text-xs); }
-  h6 { font-size: var(--text-base); }
+  h1 { font-size: var(--mico-text-ultra); }
+  h2 { font-size: var(--mico-text-lg); }
+  h3 { font-size: var(--mico-text-md); }
+  h4 { font-size: var(--mico-text-sm); }
+  h5 { font-size: var(--mico-text-xs); }
+  h6 { font-size: var(--mico-text-base); }
 
 /* Paragraphs: Ensure consistent spacing between text blocks */
 p, span { 
-  font-family: var(--secondary-font);
-  font-size: var(--text-base); 
-  font-weight: var(--font-light);
-  line-height: var(--line-height-sm);
+  font-family: var(--mico-secondary-font);
+  font-size: var(--mico-text-base); 
+  font-weight: var(--mico-font-light);
+  line-height: var(--mico-line-height-sm);
   cursor: text !important;
+
+}
+
+h1~p, h2~p, h3~p, h4~p, h5~p, h6~p{
+  margin-top: var(--mico-size-8) !important;
+
+}
+
+p~button, p~a, span~button, span~a{
+  margin-top: var(--mico-size-20) !important;
 
 }
 
@@ -74,40 +85,40 @@ p, span {
   } */
   
   li {
+    display: var(--mico-display-flex);
       list-style-type: none;
-    font-family: var(--secondary-font);
+    font-family: var(--mico-secondary-font);
       
   }
 
+
   button{
-    font-family: var(--secondary-font);
-    font-size: var(--text-base);
+    font-family: var(--mico-font-secondary);
     text-decoration: none !important; /* Remove underline by default */
     cursor: pointer;
   }
   
   /* Links: Establish a consistent style for all hyperlinks */
   a {
-    font-family: var(--secondary-font);
-    font-size: var(--text-base);
-    color: var(--color-link); /* color for links */
+    font-family: var(--mico-secondary-font);
+    color: var(--mico-color-link); /* color for links */
     text-decoration: none !important; /* Remove underline by default */
     cursor: pointer;
   }
 
   li>a{
-    font-size: var(--text-base-sm);
+    font-size: var(--mico-text-base-sm);
   }
 
 
   
   a:hover, a:focus {
     text-decoration: underline; /* Add underline on hover/focus for better UX */
-    /* color: var(--color-link-hover); */
+    /* color: var(--mico-color-link-hover); */
   }
 
-  /* a:visited { color: var(--color-link-visited); }
-  a:active { color: var(--color-link-active); } */
+  a:visited { color: var(--mico-color-link-visited); }
+  a:active { color: var(--mico-color-link-active); }
   
   /* Emphasis: Ensure italic and bold text is clearly distinguishable */
   em, i {
@@ -169,6 +180,10 @@ p, span {
     max-width: 100%; /* Prevent images from overflowing containers */
     height: auto; /* Maintain aspect ratio */
   }
+
+  input{
+    margin-bottom: var(--mico-size-16) !important;
+  }
   
   /* Figures: Style figure elements and captions */
   figure {
@@ -178,4 +193,23 @@ p, span {
   figcaption {
     font-style: italic; /* Italic style for captions */
     text-align: center;
+  }
+
+  main, section{
+    position: relative;
+  }
+
+  section>.d-grid{
+    width: var(--mico-width-full);
+    gap: var(--mico-size-16);
+    grid-template-columns: repeat(auto-fit, minmax(var(--mico-min-column-width), 1fr));
+
+  }
+
+  section>.d-flex{
+    width: var(--mico-width-full);
+  }
+
+  .d-grid>div{
+  padding: var(--mico-size-24);    
   }

@@ -1,4 +1,4 @@
-/* ---------- 12. Accessibility Helpers ---------- */
+/* --mico---mico---mico---mico---mico- 12. Accessibility Helpers --mico---mico---mico---mico---mico- */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -13,6 +13,6 @@
 }
 
 .focusable:focus {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--mico-color-primary);
   outline-offset: 2px;
 }

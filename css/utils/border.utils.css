@@ -1,19 +1,19 @@
-.border-none { border-style: var(--border-style-none); }
-.border-solid { border-style: var(--border-style-solid); }
-.border-w-0 { border-width: var(--border-width-0) !important; }
-.border-w-1 { border-width: var(--border-width-1) !important; }
-.border-w-2 { border-width: var(--border-width-2) !important; }
-.border-w-4 { border-width: var(--border-width-4) !important; }
-.border-w-5 { border-width: var(--border-width-8) !important; }
+.border-none { border-style: var(--mico-border-none); }
+.border-solid { border-style: var(--mico-border-solid); }
+.border-w-0 { border-width: var(--mico-border-width-0) !important; }
+.border-w-1 { border-width: var(--mico-border-width-1) !important; }
+.border-w-2 { border-width: var(--mico-border-width-2) !important; }
+.border-w-4 { border-width: var(--mico-border-width-4) !important; }
+.border-w-5 { border-width: var(--mico-border-width-8) !important; }
 
-.border-r-0 { border-radius: var(--spacing-0) !important; }
-.border-r-1 { border-radius: var(--spacing-1) !important; }
-.border-r-2 { border-radius: var(--spacing-2) !important; }
-.border-r-3 { border-radius: var(--spacing-3) !important; }
-.border-r-4 { border-radius: var(--spacing-4) !important; }
-.border-r-round { border-radius: var(--border-radius-round) !important; }
+.border-r-0 { border-radius: var(--mico-size-0) !important; }
+.border-r-1 { border-radius: var(--mico-size-1) !important; }
+.border-r-2 { border-radius: var(--mico-size-2) !important; }
+.border-r-3 { border-radius: var(--mico-size-3) !important; }
+.border-r-4 { border-radius: var(--mico-size-4) !important; }
+.border-r-round { border-radius: var(--mico-border-radius-round) !important; }
 
-.border-c-primary { border-color: var(--color-primary); }
-.border-c-secondary { border-color: var(--color-secondary); }
-.border-c-base { border-color: var(--color-base); }
-.border-c-black { border-color: var(--black-900); }
+.border-c-primary { border-color: var(--mico-color-primary); }
+.border-c-secondary { border-color: var(--mico-color-secondary); }
+.border-c-base { border-color: var(--mico-color-base); }
+.border-c-black { border-color: var(--mico-black-900); }

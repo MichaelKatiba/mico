@@ -1,38 +1,38 @@
 /* Font Size Utilities */
-.text-xs { font-size: var(--text-xs); }
-.text-sm { font-size: var(--text-sm); }
-.text-md { font-size: var(--text-base); }
-.text-lg { font-size: var(--text-lg); }
-.text-xl { font-size: var(--text-xl); }
-.text-ultra { font-size: var(--text-ultra); }
+.text-xs { font-size: var(--mico-text-xs); }
+.text-sm { font-size: var(--mico-text-sm); }
+.text-md { font-size: var(--mico-text-base); }
+.text-lg { font-size: var(--mico-text-lg); }
+.text-xl { font-size: var(--mico-text-xl); }
+.text-ultra { font-size: var(--mico-text-ultra); }
 
 
 /* Font Weight Utilities */
-.font-thin { font-weight: var(--font-thin); }
-.font-extralight { font-weight: var(--font-extralight); }
-.font-light { font-weight: var(--font-light); }
-.font-normal { font-weight: var(--font-normal); }
-.font-medium { font-weight: var(--font-medium); }
-.font-semibold { font-weight: var(--font-semibold); }
-.font-bold { font-weight: var(--font-bold); }
-.font-extrabold { font-weight: var(--font-extrabold); }
-.font-black { font-weight: var(--font-black); }
+.font-thin { font-weight: var(--mico-font-thin); }
+.font-extralight { font-weight: var(--mico-font-extralight); }
+.font-light { font-weight: var(--mico-font-light); }
+.font-normal { font-weight: var(--mico-font-normal); }
+.font-medium { font-weight: var(--mico-font-medium); }
+.font-semibold { font-weight: var(--mico-font-semibold); }
+.font-bold { font-weight: var(--mico-font-bold); }
+.font-extrabold { font-weight: var(--mico-font-extrabold); }
+.font-black { font-weight: var(--mico-font-black); }
 
 /* Line Height Utilities */
-.line-height-xs { line-height: var(--line-height-xs); }
-.line-height-sm { line-height: var(--line-height-sm); }
-.line-height-md { line-height: var(--line-height-md); }
-.line-height-lg { line-height: var(--line-height-lg); }
-.line-height-xl { line-height: var(--line-height-xl); }
-.line-height-ultra { line-height: var(--line-height-ultra); }
+.line-height-xs { line-height: var(--mico-line-height-xs); }
+.line-height-sm { line-height: var(--mico-line-height-sm); }
+.line-height-md { line-height: var(--mico-line-height-md); }
+.line-height-lg { line-height: var(--mico-line-height-lg); }
+.line-height-xl { line-height: var(--mico-line-height-xl); }
+.line-height-ultra { line-height: var(--mico-line-height-ultra); }
 
 /* Letter Spacing Utilities */
-.letter-spacing-xs { letter-spacing: var(--tracking-tighter); }
-.letter-spacing-sm { letter-spacing: var(--tracking-tight); }
-.letter-spacing-md { letter-spacing: var(--tracking-normal); }
-.letter-spacing-lg { letter-spacing: var(--tracking-wide); }
-.letter-spacing-xl { letter-spacing: var(--tracking-wider); }
-.letter-spacing-ultra { letter-spacing: var(--tracking-widest); }
+.letter-size-xs { letter-spacing: var(--mico-tracking-tighter); }
+.letter-size-sm { letter-spacing: var(--mico-tracking-tight); }
+.letter-size-md { letter-spacing: var(--mico-tracking-normal); }
+.letter-size-lg { letter-spacing: var(--mico-tracking-wide); }
+.letter-size-xl { letter-spacing: var(--mico-tracking-wider); }
+.letter-size-ultra { letter-spacing: var(--mico-tracking-widest); }
 
 /* Text Alignment Utilities */
 .text-left { text-align: left; }
@@ -49,8 +49,8 @@
 /* Text Decoration Utilities */
 .underline { 
   text-decoration: underline;
-  text-underline-offset: var(--underline-offset);
-  text-decoration-thickness: var(--underline-thickness);
+  text-underline-offset: var(--mico-underline-offset);
+  text-decoration-thickness: var(--mico-underline-thickness);
 }
 .overline { text-decoration: overline; }
 .line-through { text-decoration: line-through; }

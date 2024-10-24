@@ -1,22 +1,3 @@
-
-@import "utils/button.utils.css";
-@import "motion/mico.motion.css";
-@import "utils/typography.utils.css";
-@import "utils/color.utils.css";
-@import "utils/layout.utils.css";
-@import "utils/spacing.utils.css";
-@import "utils/border.utils.css";
-@import "utils/spacing.utils.css";
-@import "components/form.comp.css";
-@import "presets/default.pre.css";
-@import "presets/oxygenbuilder.pre.css";
-@import "presets/article.pre.css";
-@import "mico.variables.css";
-
-
-
-
-
 /*
  * Custom Style Guide / Design System
  * 

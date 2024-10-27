@@ -43,7 +43,7 @@ img, picture, svg, video{
 
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--mico-primary-font) !important;
+    font-family: var(--mico-font-primary) !important;
     line-height: var(--mico-line-height-xs) !important;
     user-select: text !important;
     cursor: text !important;

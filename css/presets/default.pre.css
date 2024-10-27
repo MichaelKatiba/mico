@@ -64,7 +64,6 @@ p {
   font-weight: var(--mico-font-normal);
   line-height: var(--mico-line-height-sm);
   cursor: text !important;
-
 }
 
 h1~p, h2~p, h3~p, h4~p, h5~p, h6~p{

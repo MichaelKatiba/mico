@@ -63,7 +63,7 @@ img, picture, svg, video{
 p { 
   font-family: var(--mico-secondary-font);
   font-size: var(--mico-text-base); 
-  font-weight: var(--mico-font-light);
+  font-weight: var(--mico-font-normal);
   line-height: var(--mico-line-height-sm);
   cursor: text !important;
 

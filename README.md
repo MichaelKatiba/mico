@@ -1,8 +1,8 @@
-### **Mico CSS Framework**
+# Mico CSS Framework
 Welcome to Mico - your go-to solution for building beautiful, responsive, and customizable websites with ease!
 Mico is a lightweight and versatile CSS framework designed to make building responsive and beautiful web interfaces a breeze. With Mico, you can quickly create modern and stylish websites without the bloat of larger frameworks.
 
-**Features**
+## Features
 
 - Responsive Design: Mico ensures that your website looks great on any device, from desktops to smartphones.
 - Easy to Use: With intuitive classes and components, Mico makes it simple to create stunning layouts.
@@ -10,17 +10,40 @@ Mico is a lightweight and versatile CSS framework designed to make building resp
 - Lightweight: Mico is designed to be lightweight, ensuring fast loading times for your website.
 - Flexible: Whether you're building a blog, portfolio, or e-commerce site, Mico adapts to your needs.
 
-**Getting Started**
-To get started with Mico, simply include the CSS file in your project:
+## Getting Started
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/css/mico.css">`
+### Via CDN
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/css/mico.css">
+```
 
-Then, start using Mico's classes and components to build your website!
+### WordPress (Oxygen Builder Integration)
+_More integration coming soon_
+Add this code snippet using your preferred code snippet plugin:
+```php
+function enqueue_mico_framework() {
+    if (defined('SHOW_CT_BUILDER') && !defined('OXYGEN_IFRAME')) {
+        return;
+    }
 
+    wp_enqueue_style(
+        'mico-framework',
+        'https://cdn.jsdelivr.net/gh/michaelkatiba/mico@latest/css/mico.css',
+        array(),
+        '1.0.0'
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_mico_framework', 999);
+```
 
-**Contributing**
-We welcome contributions from the community! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
+## Usage Notes
+- Suitable for experimentation and small projects
+- Perfect for learning and testing environments
+- Not recommended for production use on critical projects yet
+- Actively being developed with frequent updates
 
-**License**
-Mico is licensed under the MIT License. See the LICENSE file for details.
+## Feedback
+Your feedback and bug reports are valuable to us as we work towards a stable release. Feel free to open issues on GitHub.
 
+---
+For more information and documentation, visit our GitHub repository.

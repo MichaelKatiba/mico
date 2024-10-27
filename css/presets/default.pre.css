@@ -33,13 +33,11 @@ img, picture, svg, video{
   /* Apply base typography styles */
   body {
     max-width: 1440px;
-    background-color: var(--mico-bg-primary-color);
-    user-select: text !important;
     color: var(--mico-color-grey-800);
     /* overflow-x: var(--mico-overflow-hidden); */
     font-feature-settings: "kern" 1;
     text-rendering: optimizeLegibility;
-    text-wrap: pretty !important;
+    text-wrap: balance !important;
     margin-inline: auto !important;
   }
 
@@ -49,7 +47,7 @@ img, picture, svg, video{
     line-height: var(--mico-line-height-xs) !important;
     user-select: text !important;
     cursor: text !important;
-    text-wrap: pretty !important;
+    text-wrap: balance !important;
   }
   
   h1 { font-size: var(--mico-text-ultra); }
@@ -86,7 +84,7 @@ p~button, p~a, span~button, span~a{
   
   li {
     display: var(--mico-display-flex);
-      list-style-type: none;
+    list-style-type: none;
     font-family: var(--mico-secondary-font);
       
   }

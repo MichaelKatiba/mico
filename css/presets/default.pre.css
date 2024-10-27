@@ -60,7 +60,7 @@ img, picture, svg, video{
   h6 { font-size: var(--mico-text-base); }
 
 /* Paragraphs: Ensure consistent spacing between text blocks */
-p, span { 
+p { 
   font-family: var(--mico-secondary-font);
   font-size: var(--mico-text-base); 
   font-weight: var(--mico-font-light);

@@ -32,6 +32,7 @@
 }
 
 .nav__link {
+  font-size: clamp(0.99rem, 1.4vw, 1.25rem) !important;
   text-decoration: none !important;
   transition: color 0.3s ease;
 }

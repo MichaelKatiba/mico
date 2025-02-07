@@ -32,22 +32,16 @@ img, picture, svg, video{
   
   /* Apply base typography styles */
   body {
-    max-width: 1440px;
-    color: var(--mico-color-grey-800);
     /* overflow-x: var(--mico-overflow-hidden); */
     font-feature-settings: "kern" 1;
     text-rendering: optimizeLegibility;
-    text-wrap: balance !important;
     margin-inline: auto !important;
   }
 
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--mico-font-primary) !important;
-    line-height: var(--mico-line-height-xs) !important;
     user-select: text !important;
     cursor: text !important;
-    text-wrap: balance !important;
   }
   
   h1 { font-size: var(--mico-text-ultra); }
@@ -59,8 +53,6 @@ img, picture, svg, video{
 
 /* Paragraphs: Ensure consistent spacing between text blocks */
 p { 
-  font-family: var(--mico-secondary-font);
-  font-size: var(--mico-text-base); 
   font-weight: var(--mico-font-normal);
   line-height: var(--mico-line-height-sm);
   cursor: text !important;
@@ -90,15 +82,12 @@ p~button, p~a, span~button, span~a{
 
 
   button{
-    font-family: var(--mico-font-secondary);
     text-decoration: none !important; /* Remove underline by default */
     cursor: pointer;
   }
   
   /* Links: Establish a consistent style for all hyperlinks */
   a {
-    font-family: var(--mico-secondary-font);
-    color: var(--mico-color-link); /* color for links */
     text-decoration: none !important; /* Remove underline by default */
     cursor: pointer;
   }
@@ -107,11 +96,11 @@ p~button, p~a, span~button, span~a{
     font-size: var(--mico-text-base-sm);
   }
 
-
   
   a:hover, a:focus {
     text-decoration: underline; /* Add underline on hover/focus for better UX */
-    /* color: var(--mico-color-link-hover); */
+    outline: none !important;
+    outline-offset: none;
   }
 
   a:visited { color: var(--mico-color-link-visited); }
@@ -210,3 +199,28 @@ p~button, p~a, span~button, span~a{
   .d-grid>div{
   padding: var(--mico-size-24);    
   }
+
+  h1~div, h2~div, h3~div, h4~div, h5~div, h6~div{
+    margin-top: var(--mico-size-16) !important;
+  
+  }
+  
+  h1~p, h2~p, h3~p, h4~p, h5~p, h6~p{
+    margin-top: var(--mico-size-16) !important;
+  
+  }
+  
+  div~h1, div~h2, div~h3, div~h4, div~h5, div~h6{
+    margin-top: var(--mico-size-16) !important;
+  
+  }
+  
+  div~p{
+    margin-top: var(--mico-size-16) !important;
+  
+  }
+  
+  main{
+  padding-block: var(--mico-padding-adaptive-y) !important;
+  }
+  

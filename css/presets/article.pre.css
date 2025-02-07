@@ -1,25 +1,5 @@
 /* article-layout.css */
 /* A clean and consistent layout for article pages */
-
-:root {
-    --mico-color-text: #333;
-    --mico-color-background: #fff;
-    --mico-color-accent: #3498db;
-    --mico-font-main: 'Georgia', serif;
-    --mico-font-headings: 'Arial', sans-serif;
-    --mico-line-height: 1.6;
-    --mico-size-unit: 1rem;
-  }
-  
-  body {
-    font-family: var(--mico-font-main);
-    line-height: var(--mico-line-height);
-    color: var(--mico-color-text);
-    background-color: var(--mico-color-background);
-    margin: 0;
-    padding: 0;
-  }
-  
   .article {
     max-width: 800px;
     margin: 0 auto;

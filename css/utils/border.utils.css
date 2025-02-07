@@ -1,5 +1,5 @@
-.border-none { border-style: var(--mico-border-none); }
-.border-solid { border-style: var(--mico-border-solid); }
+.border-none { border-style: var(--mico-border-none) !important; }
+.border-solid { border-style: var(--mico-border-solid) !important; }
 .border-w-0 { border-width: var(--mico-border-width-0) !important; }
 .border-w-1 { border-width: var(--mico-border-width-1) !important; }
 .border-w-2 { border-width: var(--mico-border-width-2) !important; }
@@ -13,7 +13,7 @@
 .border-r-4 { border-radius: var(--mico-size-4) !important; }
 .border-r-round { border-radius: var(--mico-border-radius-round) !important; }
 
-.border-c-primary { border-color: var(--mico-color-primary); }
-.border-c-secondary { border-color: var(--mico-color-secondary); }
-.border-c-base { border-color: var(--mico-color-base); }
-.border-c-black { border-color: var(--mico-black-900); }
+.border-c-primary { border-color: var(--mico-color-primary) !important; }
+.border-c-secondary { border-color: var(--mico-color-secondary) !important; }
+.border-c-base { border-color: var(--mico-color-base) !important; }
+.border-c-black { border-color: var(--mico-black-900) !important; }

@@ -7,6 +7,7 @@
   --mico-breakpoint-xl: 1280px;
   --mico-breakpoint-ultra: 1440px;
 
+
   /* Font Size */
   --mico-text-ultra: clamp(3.5rem, 7vw, 5rem);
   --mico-text-xl: clamp(2.8rem, 6vw, 4rem);
@@ -14,8 +15,8 @@
   --mico-text-md: clamp(1.6rem, 4vw, 2rem);
   --mico-text-sm: clamp(1.2rem, 3vw, 1.5rem);
   --mico-text-xs: clamp(1rem, 2.5vw, 1.2rem);
-  --mico-text-base: clamp(1rem, 2.5vw, 1.4rem);
-  --mico-text-base-sm: clamp(0.95rem, 1.75vw, 1.25rem);
+  --mico-text-xxs: clamp(1rem, 2.5vw, 1.4rem);
+  --mico-text-xxxs: clamp(0.95rem, 1.75vw, 1.25rem);
 
   /* Font Weights */
   --mico-font-thin: 100;
@@ -99,11 +100,122 @@
   --mico-size-124: calc(var(--mico-size-unit) * 31); /* 124px */
   --mico-size-128: calc(var(--mico-size-unit) * 32); /* 128px */
   --mico-size-132: calc(var(--mico-size-unit) * 33); /* 132px */
+  --mico-size-136: calc(var(--mico-size-unit) * 34); /* 136px */
+  --mico-size-140: calc(var(--mico-size-unit) * 35); /* 140px */
+  --mico-size-144: calc(var(--mico-size-unit) * 36); /* 144px */
+  --mico-size-148: calc(var(--mico-size-unit) * 37); /* 148px */
+  --mico-size-152: calc(var(--mico-size-unit) * 38); /* 152px */
+  --mico-size-156: calc(var(--mico-size-unit) * 39); /* 156px */
+  --mico-size-160: calc(var(--mico-size-unit) * 40); /* 160px */
+  --mico-size-164: calc(var(--mico-size-unit) * 41); /* 164px */
+  --mico-size-168: calc(var(--mico-size-unit) * 42); /* 168px */
+  --mico-size-172: calc(var(--mico-size-unit) * 43); /* 172px */
+  --mico-size-176: calc(var(--mico-size-unit) * 44); /* 176px */
+  --mico-size-180: calc(var(--mico-size-unit) * 45); /* 180px */
+  --mico-size-184: calc(var(--mico-size-unit) * 46); /* 184px */
+  --mico-size-188: calc(var(--mico-size-unit) * 47); /* 188px */
+  --mico-size-192: calc(var(--mico-size-unit) * 48); /* 192px */
+  --mico-size-196: calc(var(--mico-size-unit) * 49); /* 196px */
+  --mico-size-200: calc(var(--mico-size-unit) * 50); /* 200px */
+  --mico-size-204: calc(var(--mico-size-unit) * 51); /* 204px */
+  --mico-size-208: calc(var(--mico-size-unit) * 52); /* 208px */
+  --mico-size-212: calc(var(--mico-size-unit) * 53); /* 212px */
+  --mico-size-216: calc(var(--mico-size-unit) * 54); /* 216px */
+  --mico-size-220: calc(var(--mico-size-unit) * 55); /* 220px */
+  --mico-size-224: calc(var(--mico-size-unit) * 56); /* 224px */
+  --mico-size-228: calc(var(--mico-size-unit) * 57); /* 228px */
+  --mico-size-232: calc(var(--mico-size-unit) * 58); /* 232px */
+  --mico-size-236: calc(var(--mico-size-unit) * 59); /* 236px */  
+  --mico-size-240: calc(var(--mico-size-unit) * 60); /* 240px */
+  --mico-size-244: calc(var(--mico-size-unit) * 61); /* 244px */
+  --mico-size-248: calc(var(--mico-size-unit) * 62); /* 248px */
+  --mico-size-252: calc(var(--mico-size-unit) * 63); /* 252px */
+  --mico-size-256: calc(var(--mico-size-unit) * 64); /* 256px */
+  --mico-size-260: calc(var(--mico-size-unit) * 65); /* 260px */
+  --mico-size-264: calc(var(--mico-size-unit) * 66); /* 264px */
+  --mico-size-268: calc(var(--mico-size-unit) * 67); /* 268px */
+  --mico-size-272: calc(var(--mico-size-unit) * 68); /* 272px */
+  --mico-size-276: calc(var(--mico-size-unit) * 69); /* 276px */
+  --mico-size-280: calc(var(--mico-size-unit) * 70); /* 280px */
+  --mico-size-284: calc(var(--mico-size-unit) * 71); /* 284px */
+  --mico-size-288: calc(var(--mico-size-unit) * 72); /* 288px */
+  --mico-size-292: calc(var(--mico-size-unit) * 73); /* 292px */
+  --mico-size-296: calc(var(--mico-size-unit) * 74); /* 296px */
+  --mico-size-300: calc(var(--mico-size-unit) * 75); /* 300px */
+  --mico-size-304: calc(var(--mico-size-unit) * 76); /* 304px */
+  --mico-size-308: calc(var(--mico-size-unit) * 77); /* 308px */
+  --mico-size-312: calc(var(--mico-size-unit) * 78); /* 312px */
+  --mico-size-316: calc(var(--mico-size-unit) * 79); /* 316px */
+  --mico-size-320: calc(var(--mico-size-unit) * 80); /* 320px */
+  --mico-size-324: calc(var(--mico-size-unit) * 81); /* 324px */
+  --mico-size-328: calc(var(--mico-size-unit) * 82); /* 328px */
+  --mico-size-332: calc(var(--mico-size-unit) * 83); /* 332px */
+  --mico-size-336: calc(var(--mico-size-unit) * 84); /* 336px */
+  --mico-size-340: calc(var(--mico-size-unit) * 85); /* 340px */
+  --mico-size-344: calc(var(--mico-size-unit) * 86); /* 344px */
+  --mico-size-348: calc(var(--mico-size-unit) * 87); /* 348px */
+  --mico-size-352: calc(var(--mico-size-unit) * 88); /* 352px */
+  --mico-size-356: calc(var(--mico-size-unit) * 89); /* 356px */
+  --mico-size-360: calc(var(--mico-size-unit) * 90); /* 360px */
+  --mico-size-364: calc(var(--mico-size-unit) * 91); /* 364px */
+  --mico-size-368: calc(var(--mico-size-unit) * 92); /* 368px */
+  --mico-size-372: calc(var(--mico-size-unit) * 93); /* 372px */
+  --mico-size-376: calc(var(--mico-size-unit) * 94); /* 376px */
+  --mico-size-380: calc(var(--mico-size-unit) * 95); /* 380px */
+  --mico-size-384: calc(var(--mico-size-unit) * 96); /* 384px */
+  --mico-size-388: calc(var(--mico-size-unit) * 97); /* 388px */
+  --mico-size-392: calc(var(--mico-size-unit) * 98); /* 392px */
+  --mico-size-396: calc(var(--mico-size-unit) * 99); /* 396px */
+  --mico-size-400: calc(var(--mico-size-unit) * 100); /* 400px */
   
   /* Adaptive paddings scales padding based on viewport size */
-  --mico-padding-adaptive: clamp(var(--mico-size-16), 8vw, var(--mico-size-100));
-  --mico-padding-adaptive-x: clamp(var(--mico-size-16), 8vw, var(--mico-size-100));
-  --mico-padding-adaptive-y: clamp(var(--mico-size-16), 6vw, var(--mico-size-56));
+  --mico-padding-adaptive-20: clamp(var(--mico-size-16), 6vw, var(--mico-size-20));
+  --mico-padding-adaptive-24: clamp(var(--mico-size-16), 6vw, var(--mico-size-24));
+  --mico-padding-adaptive-28: clamp(var(--mico-size-16), 6vw, var(--mico-size-28));
+  --mico-padding-adaptive-32: clamp(var(--mico-size-16), 6vw, var(--mico-size-32));
+  --mico-padding-adaptive-36: clamp(var(--mico-size-16), 6vw, var(--mico-size-36));
+  --mico-padding-adaptive-40: clamp(var(--mico-size-16), 6vw, var(--mico-size-40));
+  --mico-padding-adaptive-44: clamp(var(--mico-size-16), 6vw, var(--mico-size-44));
+  --mico-padding-adaptive-48: clamp(var(--mico-size-16), 6vw, var(--mico-size-48));
+  --mico-padding-adaptive-52: clamp(var(--mico-size-16), 6vw, var(--mico-size-52));
+  --mico-padding-adaptive-56: clamp(var(--mico-size-16), 6vw, var(--mico-size-56));
+  --mico-padding-adaptive-60: clamp(var(--mico-size-16), 6vw, var(--mico-size-60));
+  --mico-padding-adaptive-64: clamp(var(--mico-size-16), 6vw, var(--mico-size-64));
+  --mico-padding-adaptive-68: clamp(var(--mico-size-16), 6vw, var(--mico-size-68));
+  --mico-padding-adaptive-72: clamp(var(--mico-size-16), 6vw, var(--mico-size-72));
+  --mico-padding-adaptive-76: clamp(var(--mico-size-16), 6vw, var(--mico-size-76));
+  --mico-padding-adaptive-80: clamp(var(--mico-size-16), 6vw, var(--mico-size-80));
+  --mico-padding-adaptive-84: clamp(var(--mico-size-16), 6vw, var(--mico-size-84));
+  --mico-padding-adaptive-88: clamp(var(--mico-size-16), 6vw, var(--mico-size-88));
+  --mico-padding-adaptive-92: clamp(var(--mico-size-16), 6vw, var(--mico-size-92)); 
+  --mico-padding-adaptive-96: clamp(var(--mico-size-16), 6vw, var(--mico-size-96));
+  --mico-padding-adaptive-100: clamp(var(--mico-size-16), 8vw, var(--mico-size-100));
+  --mico-padding-adaptive-104: clamp(var(--mico-size-16), 8vw, var(--mico-size-104));
+  --mico-padding-adaptive-108: clamp(var(--mico-size-16), 8vw, var(--mico-size-108));
+  --mico-padding-adaptive-112: clamp(var(--mico-size-16), 8vw, var(--mico-size-112));
+  --mico-padding-adaptive-116: clamp(var(--mico-size-16), 8vw, var(--mico-size-116));
+  --mico-padding-adaptive-120: clamp(var(--mico-size-16), 8vw, var(--mico-size-120));
+  --mico-padding-adaptive-124: clamp(var(--mico-size-16), 8vw, var(--mico-size-124));
+  --mico-padding-adaptive-128: clamp(var(--mico-size-16), 8vw, var(--mico-size-128));
+  --mico-padding-adaptive-132: clamp(var(--mico-size-16), 8vw, var(--mico-size-132));
+  --mico-padding-adaptive-136: clamp(var(--mico-size-16), 8vw, var(--mico-size-136));
+  --mico-padding-adaptive-140: clamp(var(--mico-size-16), 8vw, var(--mico-size-140));
+  --mico-padding-adaptive-144: clamp(var(--mico-size-16), 8vw, var(--mico-size-144));
+  --mico-padding-adaptive-148: clamp(var(--mico-size-16), 8vw, var(--mico-size-148));
+  --mico-padding-adaptive-152: clamp(var(--mico-size-16), 8vw, var(--mico-size-152));
+  --mico-padding-adaptive-156: clamp(var(--mico-size-16), 8vw, var(--mico-size-156));
+  --mico-padding-adaptive-160: clamp(var(--mico-size-16), 8vw, var(--mico-size-160));
+  --mico-padding-adaptive-164: clamp(var(--mico-size-16), 8vw, var(--mico-size-164));
+  --mico-padding-adaptive-168: clamp(var(--mico-size-16), 8vw, var(--mico-size-168));
+  --mico-padding-adaptive-172: clamp(var(--mico-size-16), 8vw, var(--mico-size-172));
+  --mico-padding-adaptive-176: clamp(var(--mico-size-16), 8vw, var(--mico-size-176));
+  --mico-padding-adaptive-180: clamp(var(--mico-size-16), 8vw, var(--mico-size-180));
+  --mico-padding-adaptive-184: clamp(var(--mico-size-16), 8vw, var(--mico-size-184));
+  --mico-padding-adaptive-188: clamp(var(--mico-size-16), 8vw, var(--mico-size-188));
+  --mico-padding-adaptive-192: clamp(var(--mico-size-16), 8vw, var(--mico-size-192));
+  --mico-padding-adaptive-196: clamp(var(--mico-size-16), 8vw, var(--mico-size-196));
+  --mico-padding-adaptive-200: clamp(var(--mico-size-16), 8vw, var(--mico-size-200));
+
 
 
   /* Border radius */

@@ -215,6 +215,57 @@
   --mico-padding-adaptive-192: clamp(var(--mico-size-16), 8vw, var(--mico-size-192));
   --mico-padding-adaptive-196: clamp(var(--mico-size-16), 8vw, var(--mico-size-196));
   --mico-padding-adaptive-200: clamp(var(--mico-size-16), 8vw, var(--mico-size-200));
+  --mico-padding-adaptive-204: clamp(var(--mico-size-16), 8vw, var(--mico-size-204));
+  --mico-padding-adaptive-208: clamp(var(--mico-size-16), 8vw, var(--mico-size-208));
+  --mico-padding-adaptive-212: clamp(var(--mico-size-16), 8vw, var(--mico-size-212));
+  --mico-padding-adaptive-216: clamp(var(--mico-size-16), 8vw, var(--mico-size-216));
+  --mico-padding-adaptive-220: clamp(var(--mico-size-16), 8vw, var(--mico-size-220));
+  --mico-padding-adaptive-224: clamp(var(--mico-size-16), 8vw, var(--mico-size-224));
+  --mico-padding-adaptive-228: clamp(var(--mico-size-16), 8vw, var(--mico-size-228));
+  --mico-padding-adaptive-232: clamp(var(--mico-size-16), 8vw, var(--mico-size-232));
+  --mico-padding-adaptive-236: clamp(var(--mico-size-16), 8vw, var(--mico-size-236));
+  --mico-padding-adaptive-240: clamp(var(--mico-size-16), 8vw, var(--mico-size-240));
+  --mico-padding-adaptive-244: clamp(var(--mico-size-16), 8vw, var(--mico-size-244));
+  --mico-padding-adaptive-248: clamp(var(--mico-size-16), 8vw, var(--mico-size-248));
+  --mico-padding-adaptive-252: clamp(var(--mico-size-16), 8vw, var(--mico-size-252));
+  --mico-padding-adaptive-256: clamp(var(--mico-size-16), 8vw, var(--mico-size-256));
+  --mico-padding-adaptive-260: clamp(var(--mico-size-16), 8vw, var(--mico-size-260));
+  --mico-padding-adaptive-264: clamp(var(--mico-size-16), 8vw, var(--mico-size-264));
+  --mico-padding-adaptive-268: clamp(var(--mico-size-16), 8vw, var(--mico-size-268));
+  --mico-padding-adaptive-272: clamp(var(--mico-size-16), 8vw, var(--mico-size-272));
+  --mico-padding-adaptive-276: clamp(var(--mico-size-16), 8vw, var(--mico-size-276));
+  --mico-padding-adaptive-280: clamp(var(--mico-size-16), 8vw, var(--mico-size-280));
+  --mico-padding-adaptive-284: clamp(var(--mico-size-16), 8vw, var(--mico-size-284));
+  --mico-padding-adaptive-288: clamp(var(--mico-size-16), 8vw, var(--mico-size-288));
+  --mico-padding-adaptive-292: clamp(var(--mico-size-16), 8vw, var(--mico-size-292));
+  --mico-padding-adaptive-296: clamp(var(--mico-size-16), 8vw, var(--mico-size-296));
+  --mico-padding-adaptive-300: clamp(var(--mico-size-16), 8vw, var(--mico-size-300));
+  --mico-padding-adaptive-304: clamp(var(--mico-size-16), 8vw, var(--mico-size-304));
+  --mico-padding-adaptive-308: clamp(var(--mico-size-16), 8vw, var(--mico-size-308));
+  --mico-padding-adaptive-312: clamp(var(--mico-size-16), 8vw, var(--mico-size-312));
+  --mico-padding-adaptive-316: clamp(var(--mico-size-16), 8vw, var(--mico-size-316));
+  --mico-padding-adaptive-320: clamp(var(--mico-size-16), 8vw, var(--mico-size-320));
+  --mico-padding-adaptive-324: clamp(var(--mico-size-16), 8vw, var(--mico-size-324));
+  --mico-padding-adaptive-328: clamp(var(--mico-size-16), 8vw, var(--mico-size-328));
+  --mico-padding-adaptive-332: clamp(var(--mico-size-16), 8vw, var(--mico-size-332));
+  --mico-padding-adaptive-336: clamp(var(--mico-size-16), 8vw, var(--mico-size-336));
+  --mico-padding-adaptive-340: clamp(var(--mico-size-16), 8vw, var(--mico-size-340));
+  --mico-padding-adaptive-344: clamp(var(--mico-size-16), 8vw, var(--mico-size-344));
+  --mico-padding-adaptive-348: clamp(var(--mico-size-16), 8vw, var(--mico-size-348));
+  --mico-padding-adaptive-352: clamp(var(--mico-size-16), 8vw, var(--mico-size-352));
+  --mico-padding-adaptive-356: clamp(var(--mico-size-16), 8vw, var(--mico-size-356));
+  --mico-padding-adaptive-360: clamp(var(--mico-size-16), 8vw, var(--mico-size-360));
+  --mico-padding-adaptive-364: clamp(var(--mico-size-16), 8vw, var(--mico-size-364));
+  --mico-padding-adaptive-368: clamp(var(--mico-size-16), 8vw, var(--mico-size-368));
+  --mico-padding-adaptive-372: clamp(var(--mico-size-16), 8vw, var(--mico-size-372));
+  --mico-padding-adaptive-376: clamp(var(--mico-size-16), 8vw, var(--mico-size-376));
+  --mico-padding-adaptive-380: clamp(var(--mico-size-16), 8vw, var(--mico-size-380));
+  --mico-padding-adaptive-384: clamp(var(--mico-size-16), 8vw, var(--mico-size-384));
+  --mico-padding-adaptive-388: clamp(var(--mico-size-16), 8vw, var(--mico-size-388));
+  --mico-padding-adaptive-392: clamp(var(--mico-size-16), 8vw, var(--mico-size-392));
+  --mico-padding-adaptive-396: clamp(var(--mico-size-16), 8vw, var(--mico-size-396));
+  --mico-padding-adaptive-400: clamp(var(--mico-size-16), 8vw, var(--mico-size-400));
+  
 
 
 

@@ -6,7 +6,6 @@
 .text-xl { font-size: var(--mico-text-xl) !important; }
 .text-ultra { font-size: var(--mico-text-ultra) !important; }
 
-
 /* Font Weight Utilities */
 .font-thin { font-weight: var(--mico-font-thin) !important; }
 .font-extralight { font-weight: var(--mico-font-extralight) !important; }

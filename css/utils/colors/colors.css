@@ -196,12 +196,8 @@
 --mico-color-warning: #f39c12;
 --mico-color-error: #c0392b;
 --mico-color-info: #3498db;
+--mico-color-visited: #8e44ad;
 
-/* Link Colors */
---mico-color-link: #3498db;
---mico-color-link-hover: #2980b9;
---mico-color-link-visited: #8e44ad;
---mico-color-link-active: #2980b9;
 }
 
 

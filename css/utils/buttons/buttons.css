@@ -11,7 +11,7 @@
   white-space: nowrap; 
 }
 
-.btn--ghost{
+.btn-ghost{
   color: var(--mico-color-black-500) !important;
   background-color: transparent;
 }

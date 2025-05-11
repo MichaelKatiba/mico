@@ -1,0 +1,778 @@
+/**
+ * Mico CSS Framework - Core Variables
+ *
+ * This file defines the foundational CSS variables that power the Mico CSS framework.
+ * These variables create a consistent design system that can be used throughout your project.
+ *
+ * USAGE:
+ * Variables are accessed using the var() function:
+ * Example: font-size: var(--mico-text-md);
+ */
+
+/* ========================================================================== */
+/* RESPONSIVE BREAKPOINTS                                                     */
+/* ========================================================================== */
+
+:root {
+  /**
+   * Breakpoints define the viewport width thresholds for responsive design.
+   * These values align with common device sizes and provide a consistent
+   * foundation for responsive layouts.
+   *
+   * Usage: @media (min-width: var(--mico-breakpoint-md)) { ... }
+   */
+  --mico-breakpoint-xs: 490px;   /* Extra small devices (phones) */
+  --mico-breakpoint-sm: 576px;   /* Small devices (large phones, portrait tablets) */
+  --mico-breakpoint-md: 768px;   /* Medium devices (tablets) */
+  --mico-breakpoint-lg: 992px;   /* Large devices (desktops) */
+  --mico-breakpoint-xl: 1280px;  /* Extra large devices (large desktops) */
+  --mico-breakpoint-2xl: 1440px; /* Ultra large devices (wide screens) */
+
+
+  /* ====================================================================== */
+  /* TYPOGRAPHY SYSTEM                                                      */
+  /* ====================================================================== */
+
+  /**
+   * Font Sizes using clamp() for responsive scaling
+   *
+   * The clamp() function takes three values: minimum, preferred, and maximum
+   * This creates text that scales smoothly between viewport sizes while
+   * maintaining readable minimum and maximum sizes.
+   *
+   * Format: clamp(min-size, viewport-based-size, max-size)
+   */
+  --mico-text-3xl: clamp(3.5rem, 7vw, 5rem);     /* Largest headings (h1) */
+  --mico-text-2xl: clamp(2.8rem, 6vw, 4rem);     /* Large headings (h2) */
+  --mico-text-xl: clamp(2.1rem, 5vw, 3rem);      /* Medium headings (h3) */
+  --mico-text-lg: clamp(1.6rem, 4vw, 2rem);      /* Small headings (h4) */
+  --mico-text-md: clamp(1.2rem, 3vw, 1.5rem);    /* Large body text, small headings (h5) */
+  --mico-text-sm: clamp(1rem, 2.5vw, 1.2rem);    /* Standard body text */
+  --mico-text-xs: clamp(0.95rem, 2vw, 1.1rem);   /* Small text, captions */
+  --mico-text-2xs: clamp(0.8rem, 1.75vw, 0.95rem); /* Very small text, footnotes */
+
+  /**
+   * Font Weights
+   *
+   * Standard font weight values from 100 (thinnest) to 900 (boldest)
+   * These follow the CSS standard naming conventions
+   */
+  --mico-font-thin: 100;
+  --mico-font-extralight: 200;
+  --mico-font-light: 300;
+  --mico-font-normal: 400;
+  --mico-font-medium: 500;
+  --mico-font-semibold: 600;
+  --mico-font-bold: 700;
+  --mico-font-extrabold: 800;
+  --mico-font-black: 900;
+
+  /**
+   * Line Heights
+   *
+   * Line height controls the vertical spacing between lines of text.
+   * - Values below 1.5 are good for headings
+   * - Values 1.5-1.7 are ideal for body text for readability
+   * - Larger values create more spacing for easier reading
+   */
+  --mico-line-height-tight: 1.1;    /* Compact (headings) */
+  --mico-line-height-snug: 1.25;    /* Slightly compact */
+  --mico-line-height-normal: 1.5;   /* Standard body text */
+  --mico-line-height-relaxed: 1.625; /* Slightly relaxed */
+  --mico-line-height-loose: 1.8;    /* Loose (easy reading) */
+  --mico-line-height-extra: 2;      /* Extra spacing */
+
+  /**
+   * Letter Spacing
+   *
+   * Controls the horizontal spacing between characters.
+   * - Negative values bring letters closer together
+   * - Positive values spread letters apart
+   * - 'em' units scale with the font size
+   */
+  --mico-letter-spacing-tighter: -0.05em;
+  --mico-letter-spacing-tight: -0.025em;
+  --mico-letter-spacing-normal: 0em;
+  --mico-letter-spacing-wide: 0.025em;
+  --mico-letter-spacing-wider: 0.05em;
+  --mico-letter-spacing-widest: 0.1em;
+
+  /**
+   * Text Decoration
+   *
+   * Controls the appearance of underlines and other text decorations
+   */
+  --mico-underline-offset: 0.15em;  /* Distance between text and underline */
+  --mico-underline-thickness: 0.05em; /* Thickness of the underline */
+
+  /**
+   * Text Alignment Properties
+   *
+   * These variables define text alignment values for consistent usage.
+   */
+  --mico-text-center: center;
+  --mico-text-left: left;
+  --mico-text-right: right;
+  --mico-text-justify: justify;
+  --mico-text-nowrap: nowrap;
+  --mico-text-wrap: wrap;
+  --mico-text-ellipsis: ellipsis;
+
+  /* ====================================================================== */
+  /* SPACING SYSTEM                                                         */
+  /* ====================================================================== */
+
+  /**
+   * Spacing Scale
+   *
+   * A comprehensive spacing system based on a 4px unit.
+   * This creates a consistent rhythm throughout the interface.
+   *
+   * The base unit (--mico-size-unit) is 4px, and all other spacing
+   * values are multiples of this unit, making it easy to maintain
+   * consistent proportional spacing.
+   */
+  --mico-size-unit: 4px;            /* Base unit for spacing system */
+
+  /* Core spacing values (most commonly used) */
+  --mico-size-0: 0;                 /* No spacing */
+  --mico-size-1: 1px;               /* Pixel-perfect adjustments */
+  --mico-size-2: 2px;               /* Minimal spacing */
+  --mico-size-4: calc(var(--mico-size-unit) * 1);    /* 4px - Tiny spacing */
+  --mico-size-8: calc(var(--mico-size-unit) * 2);    /* 8px - Extra small spacing */
+  --mico-size-12: calc(var(--mico-size-unit) * 3);   /* 12px - Small spacing */
+  --mico-size-16: calc(var(--mico-size-unit) * 4);   /* 16px - Default spacing */
+  --mico-size-20: calc(var(--mico-size-unit) * 5);   /* 20px - Medium spacing */
+  --mico-size-24: calc(var(--mico-size-unit) * 6);   /* 24px - Medium spacing */
+  --mico-size-28: calc(var(--mico-size-unit) * 7);   /* 28px - Medium spacing */
+  --mico-size-32: calc(var(--mico-size-unit) * 8);   /* 32px - Large spacing */
+  --mico-size-36: calc(var(--mico-size-unit) * 9);   /* 36px - Large spacing */
+  --mico-size-40: calc(var(--mico-size-unit) * 10);  /* 40px - Extra large spacing */
+  --mico-size-44: calc(var(--mico-size-unit) * 11);  /* 44px - Extra large spacing */
+  --mico-size-48: calc(var(--mico-size-unit) * 12);  /* 48px - Extra large spacing */
+  --mico-size-56: calc(var(--mico-size-unit) * 14);  /* 56px - Huge spacing */
+  --mico-size-64: calc(var(--mico-size-unit) * 16);  /* 64px - Huge spacing */
+  --mico-size-80: calc(var(--mico-size-unit) * 20);  /* 80px - Huge spacing */
+  --mico-size-96: calc(var(--mico-size-unit) * 24);  /* 96px - Giant spacing */
+  --mico-size-112: calc(var(--mico-size-unit) * 28); /* 112px - Section spacing */
+  --mico-size-128: calc(var(--mico-size-unit) * 32); /* 128px - Section spacing */
+  --mico-size-144: calc(var(--mico-size-unit) * 36); /* 144px - Large section spacing */
+  --mico-size-160: calc(var(--mico-size-unit) * 40); /* 160px - Large section spacing */
+  --mico-size-176: calc(var(--mico-size-unit) * 44); /* 176px - Extra large section spacing */
+  --mico-size-192: calc(var(--mico-size-unit) * 48); /* 192px - Extra large section spacing */
+  --mico-size-208: calc(var(--mico-size-unit) * 52); /* 208px - Huge section spacing */
+  --mico-size-224: calc(var(--mico-size-unit) * 56); /* 224px - Huge section spacing */
+  --mico-size-240: calc(var(--mico-size-unit) * 60); /* 240px - Maximum spacing */
+  --mico-size-256: calc(var(--mico-size-unit) * 64); /* 256px - Maximum spacing */
+
+  
+  /**
+   * Main & Section Fluid Spacing Gutter
+   *
+   * Responsive spacing that adapts to viewport size.
+   * Uses clamp() to create spacing that scales between a minimum and maximum value.
+   *
+   * Format: clamp(min-size, viewport-based-size, max-size)
+   */
+  --mico-size-fluid-sm: clamp(var(--mico-size-16), 4vw, var(--mico-size-100));
+  --mico-size-fluid-md: clamp(var(--mico-size-16), 6vw, var(--mico-size-48));
+  --mico-size-fluid-lg: clamp(var(--mico-size-16), 8vw, var(--mico-size-80));
+  --mico-size-fluid-xl: clamp(var(--mico-size-16), 10vw, var(--mico-size-128));
+  --mico-size-fluid-2xl: clamp(var(--mico-size-16), 12vw, var(--mico-size-192));
+
+
+  /* ====================================================================== */
+  /* BORDER SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Border Radius
+   *
+   * Controls the roundness of element corners.
+   * Consistent border radius values create a cohesive design language.
+   */
+  --mico-radius-none: 0;            /* No rounding */
+  --mico-radius-xs: 1px;            /* Barely visible rounding */
+  --mico-radius-sm: 2px;            /* Subtle rounding */
+  --mico-radius-md: 4px;            /* Standard rounding */
+  --mico-radius-lg: 8px;            /* Prominent rounding */
+  --mico-radius-xl: 12px;           /* Very rounded corners */
+  --mico-radius-2xl: 16px;          /* Extra rounded corners */
+  --mico-radius-full: 9999px;       /* Fully rounded (circles/pills) */
+
+  /**
+   * Border Styles
+   *
+   * Standard CSS border styles for consistent usage.
+   * These variables make it easier to maintain consistent border styles.
+   */
+  --mico-border-none: none;
+  --mico-border-solid: solid;
+  --mico-border-dashed: dashed;
+  --mico-border-dotted: dotted;
+  --mico-border-double: double;
+  --mico-border-groove: groove;
+  --mico-border-ridge: ridge;
+  --mico-border-inset: inset;
+  --mico-border-outset: outset;
+
+  /**
+   * Border Widths
+   *
+   * Standard border thickness values.
+   * These follow the same scale pattern as other properties.
+   */
+  --mico-border-width-0: 0px;       /* No border */
+  --mico-border-width-1: 1px;       /* Thin border (standard) */
+  --mico-border-width-2: 2px;       /* Medium border */
+  --mico-border-width-4: 4px;       /* Thick border */
+  --mico-border-width-8: 8px;       /* Very thick border */
+
+  /* ====================================================================== */
+  /* SHADOW SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Box Shadows
+   *
+   * Creates depth and elevation in the interface.
+   * Different shadow intensities represent different elevation levels.
+   *
+   * Light mode shadows use black with opacity for a subtle effect.
+   * Dark mode shadows use white with opacity for a subtle effect.
+   */
+
+  /* Light Mode Shadows */
+  --mico-shadow-sm-light: 0 1px 2px rgba(0, 0, 0, 0.05);  /* Subtle shadow */
+  --mico-shadow-md-light: 0 4px 6px rgba(0, 0, 0, 0.1);   /* Medium shadow */
+  --mico-shadow-lg-light: 0 10px 15px rgba(0, 0, 0, 0.1); /* Large shadow */
+  --mico-shadow-xl-light: 0 20px 25px rgba(0, 0, 0, 0.15); /* Extra large shadow */
+
+  /* Dark Mode Shadows */
+  --mico-shadow-sm-dark: 0 1px 2px rgba(255, 255, 255, 0.05);
+  --mico-shadow-md-dark: 0 4px 6px rgba(255, 255, 255, 0.1);
+  --mico-shadow-lg-dark: 0 10px 15px rgba(255, 255, 255, 0.1);
+  --mico-shadow-xl-dark: 0 20px 25px rgba(255, 255, 255, 0.15);
+
+  /* Default shadows (will be overridden in dark mode) */
+  --mico-shadow-sm: var(--mico-shadow-sm-light);
+  --mico-shadow-md: var(--mico-shadow-md-light);
+  --mico-shadow-lg: var(--mico-shadow-lg-light);
+  --mico-shadow-xl: var(--mico-shadow-xl-light);
+
+  /* Inset Shadows (for pressed/inset effects) */
+  --mico-shadow-inset-sm: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  --mico-shadow-inset-md: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Focus Shadow for accessibility */
+  --mico-shadow-focus: 0 0 0 3px rgba(66, 153, 225, 0.5);
+
+  /**
+   * Media Queries for Adaptive Shadows
+   *
+   * These media queries automatically adjust shadow styles based on user preferences.
+   * - Dark mode: Uses lighter shadows on dark backgrounds
+   * - High contrast mode: Uses more visible focus indicators
+   */
+  @media (prefers-color-scheme: dark) {
+    --mico-shadow-sm: var(--mico-shadow-sm-dark);
+    --mico-shadow-md: var(--mico-shadow-md-dark);
+    --mico-shadow-lg: var(--mico-shadow-lg-dark);
+    --mico-shadow-xl: var(--mico-shadow-xl-dark);
+    --mico-shadow-inset-sm: inset 0 1px 2px rgba(255, 255, 255, 0.05);
+    --mico-shadow-inset-md: inset 0 4px 6px rgba(255, 255, 255, 0.1);
+    --mico-shadow-focus: 0 0 0 3px rgba(191, 219, 254, 0.6);
+  }
+
+  @media (prefers-contrast: high) {
+    --mico-shadow-focus: 0 0 0 4px rgba(0, 0, 0, 1);
+    --mico-shadow-sm: 0 0 0 1px currentColor;
+    --mico-shadow-md: 0 0 0 2px currentColor;
+    --mico-shadow-lg: 0 0 0 3px currentColor;
+    --mico-shadow-xl: 0 0 0 4px currentColor;
+  }
+
+  /* ====================================================================== */
+  /* LAYOUT SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Layout Properties
+   *
+   * These variables define common layout values for consistent usage.
+   * Using variables for these properties ensures consistency across the codebase.
+   */
+
+  /**
+   * Position Properties
+   *
+   * These variables define CSS position values for consistent usage.
+   * Position determines how an element is positioned in the document flow.
+   */
+  --mico-position-static: static;     /* Default positioning in document flow */
+  --mico-position-relative: relative; /* Positioned relative to normal position */
+  --mico-position-absolute: absolute; /* Positioned relative to nearest positioned ancestor */
+  --mico-position-fixed: fixed;       /* Positioned relative to viewport */
+  --mico-position-sticky: sticky;     /* Positioned based on scroll position */
+
+  /**
+   * Display Properties
+   *
+   * These variables define CSS display values for consistent usage.
+   * Display determines how an element is rendered in the layout.
+   */
+  --mico-display-block: block;           /* Element generates a block box */
+  --mico-display-inline: inline;         /* Element generates an inline box */
+  --mico-display-inline-block: inline-block; /* Inline-level block container */
+  --mico-display-flex: flex;             /* Flexible box layout */
+  --mico-display-inline-flex: inline-flex; /* Inline-level flex container */
+  --mico-display-grid: grid;             /* Grid layout */
+  --mico-display-none: none;             /* Element is not displayed */
+
+  /**
+   * Box Model Properties
+   *
+   * These variables define box model behavior for consistent usage.
+   */
+  --mico-box-sizing-border: border-box;  /* Width/height includes padding and border */
+  --mico-box-sizing-content: content-box; /* Width/height excludes padding and border */
+  --mico-box-decoration-slice: slice;    /* Background doesn't extend across fragments */
+  --mico-box-decoration-clone: clone;    /* Background extends across fragments */
+
+  /**
+   * Overflow Properties
+   *
+   * These variables define how content that overflows the element's box is handled.
+   */
+  --mico-overflow-auto: auto;           /* Add scrollbars when needed */
+  --mico-overflow-hidden: hidden;       /* Clip overflow content */
+  --mico-overflow-visible: visible;     /* Content not clipped, may overflow */
+  --mico-overflow-scroll: scroll;       /* Always show scrollbars */
+  --mico-overscroll-auto: auto;         /* Default overscroll behavior */
+  --mico-overscroll-contain: contain;   /* Prevent scroll chaining */
+  --mico-overscroll-none: none;         /* Prevent overscroll effects */
+
+  /**
+   * Aspect Ratio Properties
+   *
+   * These variables define common aspect ratios for responsive elements.
+   * Useful for maintaining proportional dimensions for images, videos, etc.
+   */
+  --mico-aspect-ratio-square: 1 / 1;        /* 1:1 ratio (square) */
+  --mico-aspect-ratio-video: 16 / 9;        /* 16:9 ratio (standard video) */
+  --mico-aspect-ratio-portrait: 3 / 4;      /* 3:4 ratio (portrait) */
+  --mico-aspect-ratio-landscape: 4 / 3;     /* 4:3 ratio (landscape) */
+  --mico-aspect-ratio-widescreen: 21 / 9;   /* 21:9 ratio (ultrawide) */
+  --mico-aspect-ratio-golden: 1.618 / 1;    /* Golden ratio (aesthetically pleasing) */
+
+  /**
+   * Float and Clear Properties
+   *
+   * These variables define float and clear values for consistent usage.
+   * Float allows elements to be placed to the left or right of their container.
+   */
+  --mico-float-left: left;              /* Float element to the left */
+  --mico-float-right: right;            /* Float element to the right */
+  --mico-float-none: none;              /* Do not float element */
+  --mico-clear-left: left;              /* Clear left floats */
+  --mico-clear-right: right;            /* Clear right floats */
+  --mico-clear-both: both;              /* Clear both left and right floats */
+
+  /**
+   * Object Fit Properties
+   *
+   * These variables define how replaced elements (like images) should be resized.
+   */
+  --mico-object-fit-contain: contain;    /* Preserve aspect ratio, fit within box */
+  --mico-object-fit-cover: cover;        /* Fill box, may crop image */
+  --mico-object-fit-fill: fill;          /* Stretch to fill box */
+  --mico-object-fit-scale-down: scale-down; /* Smaller of contain or none */
+  --mico-object-position-center: center; /* Center the object within its box */
+
+  /**
+   * Visibility and Isolation Properties
+   *
+   * These variables define visibility and stacking context behavior.
+   */
+  --mico-visibility-visible: visible;    /* Element is visible */
+  --mico-visibility-hidden: hidden;      /* Element is hidden but takes up space */
+  --mico-visibility-collapse: collapse;  /* Element is hidden (for table rows/columns) */
+  --mico-isolation-isolate: isolate;     /* Create new stacking context */
+  --mico-isolation-auto: auto;           /* Default stacking context behavior */
+
+  /**
+   * Positioning Properties
+   *
+   * These variables define common inset values for positioned elements.
+   */
+  --mico-inset-0: 0;                     /* No offset from container edges */
+  --mico-inset-auto: auto;               /* Automatic positioning */
+
+  /* ====================================================================== */
+  /* FLEXBOX SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Flexbox Properties
+   *
+   * These variables define common flexbox values for consistent usage.
+   * Flexbox is a one-dimensional layout method for arranging items.
+   */
+
+  /* Flex Direction */
+  --mico-flex-row: row;               /* Items arranged in a row */
+  --mico-flex-row-reverse: row-reverse; /* Items arranged in a row, reversed */
+  --mico-flex-col: column;            /* Items arranged in a column */
+  --mico-flex-col-reverse: column-reverse; /* Items arranged in a column, reversed */
+
+  /* Flex Wrap */
+  --mico-flex-wrap: wrap;             /* Items wrap to multiple lines */
+  --mico-flex-nowrap: nowrap;         /* Items forced into a single line */
+  --mico-flex-wrap-reverse: wrap-reverse; /* Items wrap to multiple lines, reversed */
+
+  /* Justify Content (main axis) */
+  --mico-justify-start: flex-start;   /* Items packed at start of container */
+  --mico-justify-end: flex-end;       /* Items packed at end of container */
+  --mico-justify-center: center;      /* Items centered in container */
+  --mico-justify-between: space-between; /* Items evenly distributed with space between */
+  --mico-justify-around: space-around; /* Items evenly distributed with space around */
+  --mico-justify-evenly: space-evenly; /* Items evenly distributed with equal space */
+
+  /* Align Items (cross axis) */
+  --mico-items-start: flex-start;     /* Items aligned at start of cross axis */
+  --mico-items-end: flex-end;         /* Items aligned at end of cross axis */
+  --mico-items-center: center;        /* Items centered on cross axis */
+  --mico-items-baseline: baseline;    /* Items aligned by text baseline */
+  --mico-items-stretch: stretch;      /* Items stretched to fill container */
+
+  /* ====================================================================== */
+  /* GRID SYSTEM                                                            */
+  /* ====================================================================== */
+
+  /**
+   * Grid Properties
+   *
+   * These variables define common grid layout values for consistent usage.
+   * CSS Grid is a two-dimensional layout system for complex layouts.
+   */
+
+  /* Grid Configuration */
+  --mico-grid-column-count: 12;       /* Default number of columns */
+  --mico-grid-min-column-width: 200px; /* Minimum column width for responsive grids */
+  --mico-grid-row-count: 1;           /* Default number of rows */
+  --mico-grid-min-row-height: 100px;  /* Minimum row height for responsive grids */
+
+  /* Grid Item Placement */
+  --mico-column-span: 1;              /* Default column span for grid items */
+  --mico-row-span: 1;                 /* Default row span for grid items */
+  --mico-min-column-width: 0;         /* Minimum width for auto columns */
+  --mico-max-column-width: 1fr;       /* Maximum width for auto columns */
+  --mico-min-row-height: 0;           /* Minimum height for auto rows */
+  --mico-max-row-height: 1fr;         /* Maximum height for auto rows */
+
+  /* Grid Templates */
+  --mico-grid-cols: repeat(var(--mico-grid-column-count, 12), minmax(0, 1fr)); /* Equal columns */
+  --mico-grid-cols-auto-fit: repeat(auto-fit, minmax(var(--mico-grid-min-column-width, 200px), 1fr)); /* Responsive columns */
+  --mico-grid-rows: repeat(var(--mico-grid-row-count, 1), minmax(0, 1fr)); /* Equal rows */
+
+  /* Grid Item Placement */
+  --mico-col-span: span var(--mico-column-span, 1); /* Column span for grid items */
+  --mico-row-span: span var(--mico-row-span, 1);    /* Row span for grid items */
+
+  /* Grid Flow */
+  --mico-grid-flow-row: row;          /* Grid auto-placement by row */
+  --mico-grid-flow-col: column;       /* Grid auto-placement by column */
+  --mico-grid-flow-dense: dense;      /* Dense packing algorithm */
+
+  /* Grid Auto Columns and Rows */
+  --mico-auto-cols: minmax(var(--mico-min-column-width, 0), var(--mico-max-column-width, 1fr));
+  --mico-auto-rows: minmax(var(--mico-min-row-height, 0), var(--mico-max-row-height, 1fr));
+
+  /* Grid Gap */
+  --mico-gap-xs: var(--mico-size-4);  /* Extra small gap */
+  --mico-gap-sm: var(--mico-size-8);  /* Small gap */
+  --mico-gap-md: var(--mico-size-16); /* Medium gap (default) */
+  --mico-gap-lg: var(--mico-size-24); /* Large gap */
+  --mico-gap-xl: var(--mico-size-32); /* Extra large gap */
+
+  --mico-gap: var(--mico-gap-md);     /* Default gap */
+  --mico-row-gap: var(--mico-gap);    /* Gap between rows */
+  --mico-column-gap: var(--mico-gap); /* Gap between columns */
+
+  /* ====================================================================== */
+  /* BACKGROUND SYSTEM                                                       */
+  /* ====================================================================== */
+
+  /**
+   * Background Properties
+   *
+   * These variables define common background property values for consistent usage.
+   * Background properties control how backgrounds are displayed.
+   */
+
+  /* Background Repeat */
+  --mico-bg-none: none;               /* No background image */
+  --mico-bg-repeat: repeat;           /* Repeat in both directions */
+  --mico-bg-no-repeat: no-repeat;     /* No repetition */
+  --mico-bg-repeat-x: repeat-x;       /* Repeat horizontally only */
+  --mico-bg-repeat-y: repeat-y;       /* Repeat vertically only */
+
+  /* Background Attachment */
+  --mico-bg-fixed: fixed;             /* Fixed to viewport */
+  --mico-bg-local: local;             /* Scrolls with content */
+  --mico-bg-scroll: scroll;           /* Scrolls with element */
+
+  /* Background Clip */
+  --mico-bg-clip-border: border-box;  /* Extend to outer border edge */
+  --mico-bg-clip-padding: padding-box; /* Extend to outer padding edge */
+  --mico-bg-clip-content: content-box; /* Extend to content edge */
+
+  /* ====================================================================== */
+  /* FILTER SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Filter Properties
+   *
+   * These variables define CSS filter effects for visual manipulation.
+   * Filters can be combined to create complex visual effects.
+   */
+  --mico-filter-blur: blur(8px);           /* Blurs the element */
+  --mico-filter-brightness: brightness(1.5); /* Adjusts brightness */
+  --mico-filter-contrast: contrast(1.2);    /* Adjusts contrast */
+  --mico-filter-grayscale: grayscale(100%); /* Converts to grayscale */
+  --mico-filter-hue-rotate: hue-rotate(90deg); /* Shifts colors */
+  --mico-filter-invert: invert(100%);      /* Inverts colors */
+  --mico-filter-saturate: saturate(2);     /* Adjusts color saturation */
+  --mico-filter-sepia: sepia(100%);        /* Applies sepia tone */
+
+  /* ====================================================================== */
+  /* OPACITY SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Opacity Properties
+   *
+   * These variables define standard opacity values for consistent usage.
+   * Opacity controls the transparency of elements.
+   */
+  --mico-opacity-0: 0;                /* Completely transparent */
+  --mico-opacity-25: 0.25;            /* Mostly transparent */
+  --mico-opacity-50: 0.5;             /* Semi-transparent */
+  --mico-opacity-75: 0.75;            /* Slightly transparent */
+  --mico-opacity-100: 1;              /* Completely opaque */
+
+  /* ====================================================================== */
+  /* TRANSFORM SYSTEM                                                       */
+  /* ====================================================================== */
+
+  /**
+   * Transform Properties
+   *
+   * These variables define common transform functions for consistent usage.
+   * Transforms allow elements to be visually manipulated in 2D or 3D space.
+   */
+
+  /* Scale Transforms */
+  --mico-scale-100: scale(1);         /* Original size (no scaling) */
+  --mico-scale-75: scale(0.75);       /* 75% of original size */
+  --mico-scale-50: scale(0.5);        /* 50% of original size */
+
+  /* Rotation Transforms */
+  --mico-rotate-45: rotate(45deg);    /* 45-degree rotation */
+  --mico-rotate-90: rotate(90deg);    /* 90-degree rotation */
+
+  /* Translation Transforms */
+  --mico-translate-x-full: translateX(100%); /* Move 100% right */
+  --mico-translate-y-full: translateY(100%); /* Move 100% down */
+
+  /* ====================================================================== */
+  /* TABLE SYSTEM                                                           */
+  /* ====================================================================== */
+
+  /**
+   * Table Properties
+   *
+   * These variables define table layout algorithms for consistent usage.
+   * Table layout affects how tables calculate column widths.
+   */
+  --mico-table-auto: auto;            /* Automatic table layout algorithm */
+  --mico-table-fixed: fixed;          /* Fixed table layout algorithm */
+
+  /* ====================================================================== */
+  /* SVG SYSTEM                                                             */
+  /* ====================================================================== */
+
+  /**
+   * SVG Properties
+   *
+   * These variables define common SVG property values for consistent usage.
+   * These help maintain consistent styling between HTML and SVG elements.
+   */
+  --mico-fill-current: currentColor;  /* Use current text color for fill */
+  --mico-stroke-current: currentColor; /* Use current text color for stroke */
+
+  /* ====================================================================== */
+  /* CURSOR SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Cursor Properties
+   *
+   * These variables define cursor styles for different interactive states.
+   * Cursors provide visual feedback about what the user can do.
+   */
+  --mico-cursor-auto: auto;           /* Browser default cursor */
+  --mico-cursor-default: default;     /* Default cursor (arrow) */
+  --mico-cursor-pointer: pointer;     /* Pointing hand (for links) */
+  --mico-cursor-wait: wait;           /* Waiting (hourglass) */
+  --mico-cursor-text: text;           /* Text selection (I-beam) */
+  --mico-cursor-move: move;           /* Movement indicator */
+  --mico-cursor-not-allowed: not-allowed; /* Forbidden action */
+
+  /* ====================================================================== */
+  /* SIZING SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Width and Height Properties
+   *
+   * These variables define common sizing values for consistent usage.
+   * Consistent sizing helps maintain a cohesive layout.
+   */
+
+  /* Content-based Sizing */
+  --mico-fit-content: fit-content;    /* Size based on content with constraints */
+  --mico-min-content: min-content;    /* Smallest size that fits content */
+  --mico-max-content: max-content;    /* Largest size needed for content */
+
+  /* Percentage-based Sizing */
+  --mico-width-full: 100%;            /* Full width of container */
+  --mico-height-full: 100%;           /* Full height of container */
+
+  /* Viewport-based Sizing */
+  --mico-width-screen: 100vw;         /* Full viewport width */
+  --mico-height-screen: 100vh;        /* Full viewport height */
+
+  /* Min/Max Constraints */
+  --mico-min-width-0: 0;              /* No minimum width */
+  --mico-min-height-0: 0;             /* No minimum height */
+  --mico-max-width-full: 100%;        /* Maximum width of container */
+  --mico-max-height-full: 100%;       /* Maximum height of container */
+
+  /* ====================================================================== */
+  /* ALIGNMENT SYSTEM                                                       */
+  /* ====================================================================== */
+
+  /**
+   * Vertical Alignment Properties
+   *
+   * These variables define vertical alignment values for consistent usage.
+   * Vertical alignment controls how inline or table-cell elements are aligned.
+   */
+
+  /* Basic Vertical Alignment */
+  --mico-align-baseline: baseline;    /* Align to text baseline */
+  --mico-align-top: top;              /* Align to top */
+  --mico-align-middle: middle;        /* Align to middle */
+  --mico-align-bottom: bottom;        /* Align to bottom */
+  --mico-align-text-top: text-top;    /* Align to top of text */
+  --mico-align-text-bottom: text-bottom; /* Align to bottom of text */
+
+  /* Extended Vertical Alignment */
+  --mico-vertical-align-sub: sub;     /* Subscript alignment */
+  --mico-vertical-align-super: super; /* Superscript alignment */
+
+  /**
+   * Flexbox Alignment Properties
+   *
+   * These variables define alignment values for flexbox layouts.
+   * These control how flex items are positioned within a flex container.
+   */
+  --mico-items-start: flex-start;     /* Align to start of cross axis */
+  --mico-items-end: flex-end;         /* Align to end of cross axis */
+  --mico-items-center: center;        /* Center on cross axis */
+  --mico-items-baseline: baseline;    /* Align to text baseline */
+  --mico-items-stretch: stretch;      /* Stretch to fill container */
+
+  /**
+   * Grid Alignment Properties
+   *
+   * These variables define alignment values for grid layouts.
+   * These control how grid items are positioned within grid cells.
+   */
+  --mico-content-start: start;        /* Align to start */
+  --mico-content-end: end;            /* Align to end */
+  --mico-content-center: center;      /* Center alignment */
+  --mico-content-between: space-between; /* Space between items */
+  --mico-content-around: space-around; /* Space around items */
+  --mico-content-evenly: space-evenly; /* Equal spacing */
+
+  /* ====================================================================== */
+  /* ANIMATION SYSTEM                                                       */
+  /* ====================================================================== */
+
+  /**
+   * Animation Properties
+   *
+   * These variables define common animation presets for consistent usage.
+   * Animations create movement and visual interest in the interface.
+   */
+  --mico-animation-none: none;        /* No animation */
+  --mico-animation-spin: spin 1s linear infinite; /* Spinning animation */
+  --mico-animation-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; /* Ping/pulse effect */
+  --mico-animation-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Subtle pulse */
+  --mico-animation-bounce: bounce 1s infinite; /* Bouncing effect */
+
+  /* ====================================================================== */
+  /* EASING SYSTEM                                                          */
+  /* ====================================================================== */
+
+  /**
+   * Easing Functions
+   *
+   * These variables define timing functions that control animation pacing.
+   * Different easing functions create different feelings of motion.
+   */
+
+  /* Standard Easing Functions */
+  --mico-ease: cubic-bezier(0.25, 0.1, 0.25, 1.0); /* Standard ease */
+  --mico-ease-in: cubic-bezier(0.42, 0, 1.0, 1.0); /* Slow start, fast end */
+  --mico-ease-out: cubic-bezier(0, 0, 0.58, 1.0); /* Fast start, slow end */
+  --mico-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1.0); /* Slow start and end */
+
+  /* Expressive Easing Functions */
+  --mico-ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Elastic/bouncy */
+  --mico-ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy end */
+  --mico-ease-back: cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Slight overshoot */
+
+  /* Physics-inspired Easing */
+  --mico-ease-spring: cubic-bezier(0.5, 0.1, 0.1, 1); /* Spring-like motion */
+  --mico-ease-gravity: cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Gravity effect */
+  --mico-ease-snappy: cubic-bezier(0.1, 0.9, 0.2, 1); /* Quick, snappy motion */
+
+  /* ====================================================================== */
+  /* TRANSITION SYSTEM                                                      */
+  /* ====================================================================== */
+
+  /**
+   * Transition Properties
+   *
+   * These variables define common transition presets for consistent usage.
+   * Transitions create smooth animations between property changes.
+   */
+
+  /* Transition Durations */
+  --mico-transition-duration-fast: 150ms;  /* Fast transitions */
+  --mico-transition-duration-normal: 300ms; /* Standard transitions */
+  --mico-transition-duration-slow: 500ms;  /* Slow transitions */
+
+  /* Common Transitions */
+  --mico-transition-all: all .4s var(--mico-ease); /* All properties */
+  --mico-transition-color: color .4s var(--mico-ease); /* Color only */
+  --mico-transition-background: background .4s var(--mico-ease); /* Background only */
+  --mico-transition-border: border .4s var(--mico-ease); /* Border only */
+  --mico-transition-opacity: opacity .4s var(--mico-ease); /* Opacity only */
+  --mico-transition-transform: transform .4s var(--mico-ease); /* Transform only */
+  --mico-transition-box-shadow: box-shadow .4s var(--mico-ease); /* Shadow only */
+}

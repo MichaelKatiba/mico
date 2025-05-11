@@ -1,13 +1,31 @@
-@import "utils/button.utils.css";
+/**
+ * Mico CSS Framework
+ * A lightweight and versatile CSS framework focused on utility classes
+ * Version: 1.0.0
+ * Author: Michael Katiba
+ */
+
+/* Base and Theming */
+@import "base/variables.css";
+@import "themes/styleguide.css";
+
+/* Core Utilities */
+@import "utils/typography/typography.css";
+@import "utils/colors/colors.css";
+@import "utils/layout/layout.css";
+@import "utils/layout/spacing.css";
+@import "utils/borders/borders.css";
+@import "utils/buttons/buttons.css";
+@import "utils/states/states.css";
+@import "utils/animation/animation.css";
+@import "utils/navigation/navigation.css";
+
+/* Motion */
 @import "motion/mico.motion.css";
-@import "utils/typography.utils.css";
-@import "utils/color.utils.css";
-@import "utils/layout.utils.css";
-@import "utils/border.utils.css";
-@import "utils/spacing.utils.css";
-@import "utils/states.utils.css";
-@import "components/form.comp.css";
+
+/* Presets */
 @import "presets/default.pre.css";
 @import "presets/oxygenbuilder.pre.css";
-@import "mico.accessibility.css";
-@import "mico.variables.css";
+
+/* Accessibility */
+@import "accessibility/accessibility.css";

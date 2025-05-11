@@ -1,0 +1,53 @@
+{
+  "name": "mico",
+  "version": "1.0.0",
+  "description": "A lightweight and versatile CSS framework",
+  "main": "dist/css/mico.min.css",
+  "scripts": {
+    "dev": "npm run watch:css",
+    "start": "npm run dev",
+    "build": "node scripts/cleanup-components.js && npm run build:css && npm run build:js",
+    "preview": "echo \"Use a local server to preview the built files in the dist directory\"",
+    "build:css": "npm run clean && npm run ensure-dirs && postcss css/mico.css -o dist/css/mico.min.css --env production && postcss css/mico.css -o dist/css/mico.css --env development && node scripts/copy-theme.js",
+    "ensure-dirs": "node -e \"const fs = require('fs'); const path = require('path'); const dirs = ['dist/css', 'dist/css/themes', 'dist/js']; dirs.forEach(dir => { if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true }); });\"",
+    "build:custom": "node scripts/build-custom.js",
+    "clean": "rimraf dist/css dist/js",
+    "watch:css": "postcss css/mico.css -o dist/css/mico.css --watch",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "test": "node tests/run-tests.js",
+    "test:visual": "echo \"Visual regression tests would run here\"",
+    "build:js": "node scripts/build-js.js",
+    "serve": "npx serve -l 8080",
+    "serve:http": "node --no-deprecation node_modules/http-server/bin/http-server . -o -c-1",
+    "demo": "npm run build && npm run serve",
+    "cleanup:components": "node scripts/cleanup-components.js"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "responsive",
+    "lightweight"
+  ],
+  "author": "Michael Katiba",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "http-server": "^14.1.1",
+    "serve": "^14.2.1",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^8.4.2",
+    "rimraf": "^5.0.1",
+    "stylelint": "^15.7.0",
+    "stylelint-config-standard": "^33.0.0",
+    "terser": "^5.19.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not IE 11"
+  ]
+}
